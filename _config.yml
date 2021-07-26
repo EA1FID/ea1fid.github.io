@@ -1,131 +1,222 @@
+# -----------------------------------------------------------------------------
 # Site settings
-title: FIDtennas
-SEOTitle: FIDtenna - Open-Source antenna hardware
-header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "Open-source antennae from 50MHz onwards - specialised in Amateur Radio bands and propatagions. By EA1FID"
-keyword: "Antennae, Ham Radio, RF, Telecommunications, Engineering"
-url: "https://huangxuan.me"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+# -----------------------------------------------------------------------------
 
-# Publish posts or collection documents with a future date.
-future: true
+title: blank # the website title (if blank, full name will be used instead)
+first_name: FIDantennas
+middle_name: " - "
+last_name: " "
+email: you@example.com
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  Designing state-of-the-art antennae for optimal performance at VHF bands and up
+footer_text: >
+  COSITAS <a href="http://jekyllrb.com/" target="_blank">ENLCASE</a> CON ENLACES
 
-# SNS settings
-RSS: false
-github_username:    ea1fid
-twitter_username:   ea1fid
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
+icon: 📡 # the emoji used as the favicon
+url:  # the base hostname & protocol for your site
+baseurl: #/al-folio # the subpath of your site, e.g. /blog/
+last_updated: false # set to true if you want to display last updated in the footer
+impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
+# -----------------------------------------------------------------------------
+# RSS Feed
+# -----------------------------------------------------------------------------
+# will use title and url fields
+# Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
 
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-# If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN  
+navbar_fixed: true
+footer_fixed: true
 
+# Dimensions
+max_width: 800px
 
+# TODO: add layout settings (single page vs. multi-page)
 
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-# make sure you have this gem installed
-# `$ gem install jekyll-paginate`
-plugins: [jekyll-paginate]
+# -----------------------------------------------------------------------------
+# Open Graph
+# -----------------------------------------------------------------------------
+# Display links to the page with a preview object on social media.
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+og_image: # The site-wide (default for all links) Open Graph preview image
 
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
 
+github_username: pepassaco # your GitHub user name
+gitlab_username: # your GitLab user name
+twitter_username: ea1fid # your Twitter handle
+linkedin_username: # your LinkedIn user name
+scholar_userid: # your Google Scholar ID
+orcid_id: # your ORCID ID
+medium_username: # your Medium username
+quora_username: # your Quora username
+publons_id: # your ID on Publons
+research_gate_profile: # your profile on ResearchGate
+blogger_url: # your blogger URL
+work_url: # work page URL
+keybase_username: # your keybase user name
+wikidata_id: # your wikidata id
+dblp_url: # your DBLP profile url
 
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
+contact_note: >
+  Designer: Pablo EA1FID, telecommunication Engineer by the Universidad Politécnica de Madrid
+
+google_analytics: UA-XXXXXXXXX # out your google-analytics code
+panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+
+blog_name: The Blog  # your blog must have a name for it to show up in the nav bar
+blog_description: Discusion about the present and the future of Amateur Equipment
+permalink: /blog/:year/:title/
+
+# Pagination
+pagination:
+  enabled: true
+
+# Comments
+disqus_shortname: al-folio # put your disqus shortname
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+news_limit: 5
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+# Markdown and syntax highlight
 markdown: kramdown
+highlighter: rouge
+highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  input: GFM
   syntax_highlighter_opts:
+    css_class: 'highlight'
     span:
       line_numbers: false
     block:
-      line_numbers: true
+      line_numbers: false
       start_line: 1
 
+# Includes & excludes
+include: ['_pages']
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+keep_files:
+  - CNAME
+  - .nojekyll
+  - .git
 
+# Plug-ins
+plugins:
+  - jekyll-email-protect
+  - jekyll-github-metadata
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-twitter-plugin
+  - jekyll-sitemap
+  - jemoji
 
-# Disqus settings
-disqus_username: hux
+# Extras
+github: [metadata]
 
-# Netease settings
-netease_comment: false
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
 
+scholar:
 
+  last_name: Einstein
+  first_name: [Albert, A.]
 
-# Analytics settings
-# Baidu Analytics 
-# ba_track_id: [your track id]
+  style: apa
+  locale: en
 
-# Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
 
+  replace_strings: true
+  join_strings: true
 
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
 
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Specialised designs for achieving optimum performance in every single Amateur Radio Band <br> By the Telecommunications Engineer Pablo EA1FID"
-sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+  query: "@*"
 
+# -----------------------------------------------------------------------------
+# Optional Features
+# -----------------------------------------------------------------------------
 
+enable_google_analytics:    false  # enables google analytics
+enable_panelbear_analytics: false  # enables panelbear analytics
+enable_mansory:             true   # enables automatic project cards arangement
+enable_math:                true   # enables math typesetting (uses MathJax)
+enable_tooltips:            false  # enables automatic tooltip links generated
+                                   # for each section titles on pages and posts
+enable_darkmode:            true   # enables switching between light/dark modes
+enable_navbar_social:       false  # enables displaying social links in the
+                                   # navbar on the about page
+enable_project_categories:  true   # enables categorization of projects into
+                                   # multiple categories
+enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
 
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+# -----------------------------------------------------------------------------
+# Library versions
+# -----------------------------------------------------------------------------
 
-
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
-
-
-# MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
-
-
-
-# Friends
-friends: [
-    {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-        title: "乱序（Midare）",
-        href: "http://mida.re/"
-    },{
-        title: "Sherry Woo",
-        href: "https://sherrywoo.me/"
-    },{
-        title: "Kun Qian",
-        href: "http://kunq.me"
-    },{
-        title: "Ebn Zhang",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "JiyinYiyong",
-        href: "http://tiye.me/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    }
-]
+academicons:
+  version: "1.9.0"
+  integrity: "sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg=="
+bootstrap:
+  version: "4.5.2"
+  integrity:
+    css: "sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+    js: "sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ=="
+fontawesome:
+  version: "5.14.0"
+  integrity: "sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+jquery:
+  version: "3.5.1"
+  integrity: "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+mathjax:
+  version: "3.1.2"
+mansory:
+  version: "4.2.2"
+  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+mdb:
+  version: "4.19.1"
+  integrity:
+    css: "sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q=="
+    js: "sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw=="
+popper:
+  version: "2.4.4"
+  integrity: "sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A=="
+medium_zoom:
+  version: "1.0.6"
+  integrity: "sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM="
