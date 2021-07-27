@@ -1,6 +1,6 @@
 baseURL = "https://www.fidtenas.ga/"
 languageCode = "en-us"
-title = "Navigator | Responsive Multipurpose Bootstrap Hugo Template"
+title = "FIDtenas | Open-source RF hardware for Amateur Radio"
 theme = "navigator-hugo"
 summaryLength = 10
 
@@ -23,7 +23,7 @@ logo = "images/logo.png"
 
 # Gestion des langues : FR / EN / NL / DE
 [[Params.listeLangues]]
-code = "fr"
+code = "es"
 [[Params.listeLangues]]
 code = "en"
 
@@ -34,66 +34,66 @@ description = "This is meta description"
 # Gestion des langues : FR / EN / NL / DE
 [Languages]
 ############ 1 - Site en FRANCAIS
-[Languages.fr]
+[Languages.es]
 weight = 1
-languageCode = "fr-fr"
-title = "FRANCAIS Example site multi-language"
+languageCode = "es-es"
+title = "FIDtenas: open-source RF"
 dateFormat = "2 January 2006"
 
 home = "Home"
 logo = "images/logo.png"
 menufixed = false
 
-footerDescription = "FRANCAIS Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-footerServiceTitle = "FRANCAIS Services"
-footerQuicklinkTitle = "FRANCAIS Quick links"
-footerAboutTitle = "FRANCAIS About"
-footerSubscribeTitle = "FRANCAIS Subscribe"
+footerDescription = "Diseño de antenas open-source para bandas de VHF en adelante"
+footerServiceTitle = "Nuestro objetivo"
+footerQuicklinkTitle = "Acceso rápido"
+footerAboutTitle = "Sobre nosotros"
+footerSubscribeTitle = "Suscríbete"
 
 # Hero Area Section
-[Languages.fr.params.hero]
+[Languages.es.params.hero]
 enable  = true
-heading = "FRANCAIS We love to make brands grow"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+heading = "La vanguardia de las telecomunicaciones al alcance de todos"
+description = "Desde FIDtenas, buscamos desarrollar hardware de RF utilizando las ténicas actuales más avanzadas para ofrecer de forma abierta diseños actualizados y optimizados a radioaficionados y entusiastas de las comunicaciones por radio"
 button  = true
-btnText = "Know More"
-btnURL  = "https://themefisher.com/"
+btnText = "Accede a nuestro repositorio"
+btnURL  = "https://github.com/pepassaco/FIDtennas"
 videoThumb = "images/slider/video-player-thumb.jpg"
 videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
 # About 2 Section
-[Languages.fr.params.aboutSm]
+[Languages.es.params.aboutSm]
 enable  = true
-title   = "FRANCAIS We have explored the digital landscape with passion for a long time"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+title   = "Diseños optimizados para las comunicaciones entre radioaficionados"
+description = "No es igual diseñar una antena pensada para un enlace fijo punto a punto que para explotar modos de propagación como satélite, dispersión meteórica o aurora. Nuestra experiencia en el mundo de la radioafición nos capacita para optimizar las especificaciones de nuestros sistemas a aquellas más necesitadas por los radioaficionados, a fin de dotarlos de un rendimiento óptimo en su aplicación final."
 
 # Blog Section On Homepage
-[Languages.fr.params.blog]
+[Languages.es.params.blog]
 enable  = true
-topTitle= "OUR UNTOLD STORY"
-title   = "FRANCAIS Blog."
-subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+topTitle= "DISEÑOS OPEN-SOURCE"
+title   = "Antenas"
+subtitle= "En esta web encontrarás antenas para las principales bandas de radioaficionado desde los 50MHz hasta microondas. "
 
 # Contact Section
-[Languages.fr.params.contact]
+[Languages.es.params.contact]
 enable  = true
-topTitle= "DROP US A NOTE"
-title   = "FRANCAIS Contact Us."
-subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-address = "14/05, Stockhome <br> Victori Palace , United States"
-phone   = "(03) 9283 2617"
-fax     = "+61 3827 3590"
-facebook= "https://www.facebook.com/"
+topTitle= "¿ALGUNA DUDA?"
+title   = "Contacto"
+subtitle= "Estaremos encantados de responder cualquier duda o comentario"
+#address = "14/05, Stockhome <br> Victori Palace , United States"
+#phone   = "(03) 9283 2617"
+#fax     = "+61 3827 3590"
+#facebook= "https://www.facebook.com/"
 twitter = "https://twitter.com/"
-linkedin= "https://www.linkedin.com/"
-dribbble= "https://dribbble.com/"
+#linkedin= "https://www.linkedin.com/"
+#dribbble= "https://dribbble.com/"
 instagram= "https://www.instagram.com/"
-mapLatitude = "51.507351"
-mapLongitude= "-0.127758"
-mapMarker   = "images/marker.png"
+#mapLatitude = "51.507351"
+#mapLongitude= "-0.127758"
+#mapMarker   = "images/marker.png"
 
 # Call to Action Section on About Page
-[Languages.fr.params.cta]
+[Languages.es.params.cta]
 enable  = true
 bg      = "images/call-to-action/call-to-action-bg-2.jpg"
 title   = "FRANCAIS Let's Create Something Together"
