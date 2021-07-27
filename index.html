@@ -9,7 +9,7 @@
 <link rel=icon href=https://www.fidtenas.ga/images/favicon.png type=image/x-icon>
 <link rel=preconnect href=https://fonts.gstatic.com>
 <link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap">
-<link rel=stylesheet href=https://www.fidtenas.ga/css/vendor.min.f38e7c7e6ab34c94774fb608f1bb6b5912854002ca41fa9c63fd334fcddbd97e26be4783c0f6fd40b8fc78776c7169352bbc43ccfa6f56de22009e059d7401e1.css integrity="sha512-8458fmqzTJR3T7YI8btrWRKFQALKQfqcY/0zT83b2X4mvkeDwPb9QLj8eHdscWk1K7xDzPpvVt4iAJ4FnXQB4Q==" media=screen>
+<link rel=stylesheet href=https://www.fidtenas.ga/css/vendor.min.e68e9f7f3e6d2a203796a8e50b50db48ab394bf8d0f60a580356046743390c4d99b50b0dcf80daa30568504adfe30bbc123e3ae80a107a0b2a42776dc343adab.css integrity="sha512-5o6ffz5tKiA3lqjlC1DbSKs5S/jQ9gpYA1YEZ0M5DE2ZtQsNz4DaowVoUErf4wu8Ej466AoQegsqQndtw0Otqw==" media=screen>
 </head>
 <body>
 <div class=header-height-fix></div>
@@ -19,7 +19,7 @@
 <div class=col-12>
 <nav class="navbar navbar-expand-lg navbar-light p-0">
 <a class="navbar-brand font-weight-bold mr-0" href=https://www.fidtenas.ga>
-<img loading=lazy src=https://www.fidtenas.ga/images/logo.png alt="FIDtenas | Open-source RF hardware for Amateur Radio" height=35px>
+<img loading=lazy src=https://www.fidtenas.ga/images/logo_v2.png alt="FIDtenas | Open-source RF hardware for Amateur Radio" height=110px>
 </a>
 <button class="search-toggle d-inline-block d-lg-none ml-auto mr-3" data-toggle=search aria-label="Search Toggle">
 <i class="las la-search"></i>
@@ -33,21 +33,20 @@
 <li class=nav-item>
 <a class=nav-link href=https://www.fidtenas.ga/>Home</a>
 </li>
-<li class=nav-item>
-<a class=nav-link href=https://www.fidtenas.ga/about>About</a>
-</li>
-<li class=nav-item>
-<a class=nav-link href=https://www.fidtenas.ga/contact>Contact</a>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle d-inline-block" href=# role=button data-toggle=dropdown aria-expanded=false>Designs</a>
+<ul class=dropdown-menu>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/>All</a></li>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/categories/>Categories</a></li>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/tags/>Tags</a></li>
+</ul>
 </li>
 <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle d-inline-block" href=# role=button data-toggle=dropdown aria-expanded=false>Pages</a>
+<a class="nav-link dropdown-toggle d-inline-block" href=# role=button data-toggle=dropdown aria-expanded=false>About</a>
 <ul class=dropdown-menu>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/about>FIDtenas</a></li>
 <li><a class=dropdown-item href=https://www.fidtenas.ga/author/>Author</a></li>
-<li><a class=dropdown-item href=https://www.fidtenas.ga/tags/>Tags</a></li>
-<li><a class=dropdown-item href=https://www.fidtenas.ga/categories/>Category</a></li>
-<li><a class=dropdown-item href=https://www.fidtenas.ga/elements/>Elements</a></li>
-<li><a class=dropdown-item href=https://www.fidtenas.ga/privacy/>Privacy</a></li>
-<li><a class=dropdown-item href=https://www.fidtenas.ga/terms-conditions/>Terms & Conditions</a></li>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/contact>Contact</a></li>
 </ul>
 </li>
 </ul>
@@ -263,23 +262,22 @@
 </div>
 <div class="col-lg-12 text-center mt-5">
 <ul class="list-inline footer-menu mb-4">
-<li class="list-inline-item mx-3"><a href=https://www.fidtenas.ga/about/>About</a></li>
-<li class="list-inline-item mx-3"><a href=https://www.fidtenas.ga/author/>Authors</a></li>
-<li class="list-inline-item mx-3"><a href=https://www.fidtenas.ga/privacy/>Privacy</a></li>
-<li class="list-inline-item mx-3"><a href=https://www.fidtenas.ga/terms-conditions/>Terms & Conditions</a></li>
+<li class="list-inline-item mx-3"><a href=https://www.fidtenas.ga/about/>FIDtenas</a></li>
+<li class="list-inline-item mx-3"><a href=https://www.fidtenas.ga/author/>Author</a></li>
+<li class="list-inline-item mx-3"><a href=https://www.fidtenas.ga/contact>Contact</a></li>
 </ul>
 <ul class="social-links icon-box list-unstyled list-inline font-weight-500 mb-3">
-<li class="list-inline-item text-center"><a href=https://www.facebook.com/ aria-label=social-icon>
+<li class="list-inline-item text-center"><a href=https://www.facebook.com/fidtenas aria-label=social-icon>
 <i class="lab lab la-facebook-f"></i>
 </a></li>
-<li class="list-inline-item text-center"><a href=https://www.twitter.com/ aria-label=social-icon>
+<li class="list-inline-item text-center"><a href=https://www.twitter.com/fidtenas aria-label=social-icon>
 <i class="lab lab la-twitter"></i>
 </a></li>
-<li class="list-inline-item text-center"><a href=https://www.instagram.com/ aria-label=social-icon>
-<i class="lab lab la-instagram"></i>
-</a></li>
-<li class="list-inline-item text-center"><a href=https://www.linkedin.com/ aria-label=social-icon>
+<li class="list-inline-item text-center"><a href=https://es.linkedin.com/in/p-adominguez aria-label=social-icon>
 <i class="lab lab la-linkedin-in"></i>
+</a></li>
+<li class="list-inline-item text-center"><a href=https://github.com/pepassaco/FIDtennas aria-label=social-icon>
+<i class="lab lab la-github"></i>
 </a></li>
 </ul>
 <p class="mb-0 font-weight-500 copyright-text content">Designs and development by Pablo EA1FID</p>
