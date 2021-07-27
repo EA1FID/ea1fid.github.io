@@ -65,12 +65,12 @@ black = "#000000"
 dark = "#152035"
 gray = "#747577"
 light = "#FAFAFA"
-color_primary = "#01AD9F"
+color_primary = "#217FB0" #"#01AD9F"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
-logo_height = "35px"
+logo = "images/logo_v2.png"
+logo_height = "110px"
 favicon = "images/favicon.png"
 # Meta data
 description = "This is meta description"
@@ -115,93 +115,125 @@ expire_days = 2
 weight = 1
 url = "/"
 name = "Home"
+
+
+[[menu.main]]
+weight = 2
+url = "#"
+name = "Designs"
+hasChildren = true
+
+  [[menu.main]]
+  parent = "Designs"
+  weight = 2
+  url = "/"
+  name = "All"
+  
+  [[menu.main]]
+  parent = "Designs"
+  weight = 2
+  url = "categories/"
+  name = "Categories"
+  
+  [[menu.main]]
+  parent = "Designs"
+  weight = 3
+  url = "tags/"
+  name = "Tags"
   
 [[menu.main]]
 weight = 3
 url = "about"
 name = "About"
   
-[[menu.main]]
-weight = 4
-url = "contact"
-name = "Contact"
 
 [[menu.main]]
-weight = 5
+weight = 4
 url = "#"
-name = "Pages"
+name = "About"
 hasChildren = true
 
   [[menu.main]]
-  parent = "Pages"
+  parent = "About"
   weight = 1
+  url = "about"
+  name = "FIDtenas"
+  
+  [[menu.main]]
+  parent = "About"
+  weight = 2
   url = "author/"
   name = "Author"
   
   [[menu.main]]
-  parent = "Pages"
-  weight = 2
-  url = "tags/"
-  name = "Tags"
-  
-  [[menu.main]]
-  parent = "Pages"
+  parent = "About"
   weight = 3
-  url = "categories/"
-  name = "Category"
+  url = "contact"
+  name = "Contact"
   
-  [[menu.main]]
-  parent = "Pages"
-  weight = 4
-  url = "elements/"
-  name = "Elements"
   
-  [[menu.main]]
-  parent = "Pages"
-  weight = 5
-  url = "privacy/"
-  name = "Privacy"
   
-  [[menu.main]]
-  parent = "Pages"
-  weight = 6
-  url = "terms-conditions/"
-  name = "Terms & Conditions"
+#  [[menu.main]]
+#  parent = "Pages"
+#  weight = 4
+#  url = "elements/"
+#  name = "Elements"
+  
+#  [[menu.main]]
+#  parent = "Pages"
+#  weight = 5
+#  url = "privacy/"
+#  name = "Privacy"
+  
+#  [[menu.main]]
+#  parent = "Pages"
+#  weight = 6
+#  url = "terms-conditions/"
+#  name = "Terms & Conditions"
 
 ############################# Footer Menu ########################
 [[menu.footer]]
 weight = 1
 url = "about/"
-name = "About"
+name = "FIDtenas"
 
 [[menu.footer]]
 weight = 2
 url = "author/"
-name = "Authors"
+name = "Author"
 
 [[menu.footer]]
 weight = 3
-url = "privacy/"
-name = "Privacy"
+url = "contact"
+name = "Contact"
 
-[[menu.footer]]
-weight = 4
-url = "terms-conditions/"
-name = "Terms & Conditions"
+#[[menu.footer]]
+#weight = 3
+#url = "privacy/"
+#name = "Privacy"
+
+#[[menu.footer]]
+#weight = 4
+#url = "terms-conditions/"
+#name = "Terms & Conditions"
 
 # Social Icons
 [[params.social]]
-url = "https://www.facebook.com/"
+url = "https://www.facebook.com/fidtenas"
 icon = "lab la-facebook-f" # https://icons8.com/line-awesome
 
 [[params.social]]
-url = "https://www.twitter.com/"
+url = "https://www.twitter.com/fidtenas"
 icon = "lab la-twitter" # https://icons8.com/line-awesome
 
-[[params.social]]
-url = "https://www.instagram.com/"
-icon = "lab la-instagram" # https://icons8.com/line-awesome
+#[[params.social]]
+#url = "https://www.instagram.com/"
+#icon = "lab la-instagram" # https://icons8.com/line-awesome
 
 [[params.social]]
-url = "https://www.linkedin.com/"
+url = "https://es.linkedin.com/in/p-adominguez"
 icon = "lab la-linkedin-in" # https://icons8.com/line-awesome
+
+[[params.social]]
+url = "https://github.com/pepassaco/FIDtennas"
+icon = "lab la-github" # https://icons8.com/line-awesome
