@@ -53,7 +53,7 @@ footerSubscribeTitle = "Suscríbete"
 # Hero Area Section
 [Languages.es.params.hero]
 enable  = true
-heading = "La vanguardia de las telecomunicaciones al alcance de todos"
+heading = "La vanguardia de la RF al alcance de todos"
 description = "Desde FIDtenas, buscamos desarrollar hardware de RF utilizando las ténicas actuales más avanzadas para ofrecer de forma abierta diseños actualizados y optimizados a radioaficionados y entusiastas de las comunicaciones por radio"
 button  = true
 btnText = "Accede a nuestro repositorio"
