@@ -96,9 +96,9 @@ instagram= "https://www.instagram.com/"
 [Languages.es.params.cta]
 enable  = true
 bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-title   = "FRANCAIS Let's Create Something Together"
-subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-btnText = "Nous contacter"
+title   = "El autor"
+subtitle= "El autor de este proyecto y diseñador de los modelos publicados en esta web es Pablo EA1FID Álvarez. Ingeniero de Telecomunicaciones por la Universidad Politécnica de Madrid y radioaficionado desde temprana edad, cuenta con los conocimientos y experiencia necesarios para llevar a cabo las tareas de planificación, simulación electromagnética, optimización, diseño de modelos 3D y caracterización de sistemas de RF; aptitudes que garantizan el correcto desarrollo de FIDtenas"
+btnText = "Contacto"
 
 ############# 2 - Site en ENGLISH
 [Languages.en]
