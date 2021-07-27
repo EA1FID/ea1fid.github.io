@@ -7,22 +7,19 @@ draft: false
 #caption
 caption:
   enable: true
-  title: "I’m Henara Colii, A content writer based in LDN, currently at Bookworm."
+  title: "Designing state-of-the-art antennae for optimal performance at 50 MHz and up"
 
 # social
 social:
   enable: true
   social_links:
-  - link: "https://www.facebook.com/"
+  - link: "https://www.facebook.com/fidtenas"
     icon: "lab la-facebook-f"
 
-  - link: "https://www.twitter.com/"
+  - link: "https://www.twitter.com/fidtenas"
     icon: "lab la-twitter"
     
-  - link: "https://www.linkedin.com/"
-    icon: "lab la-linkedin-in"
-    
-  - link: "https://www.github.com/"
+  - link: "https://github.com/pepassaco/FIDtennas"
     icon: "lab la-github"
 
 # what_i_do
@@ -43,6 +40,8 @@ what_i_do:
     description: "Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis."
  
 ---
-A content writer with over 12 years experience working across brand identity, publishing and digital products. Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget.
 
-Purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis.
+From FIDtenas, we seek to develop RF hardware using the most advanced state-of-the-art techniques to freely offer updated and optimized designs to radio amateurs and radio communications enthusiasts.
+
+It is not the same to design an antenna for a fixed point-to-point link than to exploit propagation modes such as satellite, meteor scattering or aurora. Our experience in the amateur radio world enables us to optimize the specifications of our systems to those most needed by radio amateurs, in order to provide them with optimum performance in their final application.
+
