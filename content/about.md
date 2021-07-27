@@ -24,20 +24,20 @@ social:
 
 # what_i_do
 what_i_do:
-  title: "What I Do"
+  title: "What We Do"
   enable: true
   item:
-  - title: "Content Writing"
-    icon: "las la-pen-nib"
-    description: "Purus eget ipsum elementum venenatis, quis rutrum mi semper nonpurus eget ipsum elementum venenatis."
+  - title: "Electromagnetic optimization"
+    icon: "las la-desktop"
+    description: "After coming with an initial design, we perform several EM simulations in order to optimise our antennae and achieve the required specifications."
     
-  - title: "Photography"
-    icon: "las la-camera"
-    description: "Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis."
+  - title: "Model and assembly"
+    icon: "las la-satellite-dish"
+    description: "All of our antennae use easy-to-find materials. In case of needing any special part, they are computer modeled, 3D printed and published so that anyone can print one."
     
-  - title: "Web Research"
-    icon: "lar la-snowflake"
-    description: "Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis."
+  - title: "Measurement and testing"
+    icon: "las la-satellite"
+    description: "Our prototyes are adequately characterised and tested before publishing any design plans. All of the results of the different measurements are also made public."
  
 ---
 

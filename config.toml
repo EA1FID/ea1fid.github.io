@@ -7,7 +7,7 @@ paginate = "5"
 # post excerpt
 summaryLength = "20"
 # google analytics
-googleAnalytics = "" # example : UA-123-45
+googleAnalytics = "G-3JDWE9JHGD" # example : UA-123-45
 # disqus short name
 disqusShortname = "themefisher-template" # get your shortname form here : https://disqus.com
 
@@ -76,7 +76,7 @@ favicon = "images/favicon.png"
 description = "This is meta description"
 author = "Themefisher"
 # contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
+contact_form_action = "https://formspree.io/f/xzbyjbkl" # contact form works with https://formspree.io
 # search
 search = true
 # main section
