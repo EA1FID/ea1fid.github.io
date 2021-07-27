@@ -1,231 +1,207 @@
-baseURL = "https://www.fidtenas.ga/"
-languageCode = "en-us"
+######################## default configuration ####################
+baseURL = "https://www.fidtenas.ga"
 title = "FIDtenas | Open-source RF hardware for Amateur Radio"
-theme = "navigator-hugo"
-summaryLength = 10
+theme = "bookworm"
+# post pagination
+paginate = "5"
+# post excerpt
+summaryLength = "20"
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+# disqus short name
+disqusShortname = "themefisher-template" # get your shortname form here : https://disqus.com
 
-# Build robots.txt file
-enableRobotsTXT = true
-# google analytics tracking id
-googleAnalytics = "" # your analitics ID
+############################# Modules ##############################
+[module.hugoVersion]
+extended = true
+min = "0.80.0"
 
-enableGitInfo = false
-pygmentsCodeFences = true
+############################# Outputs ##############################
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 
-# Multilangues setup
-# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
-defaultContentLanguageInSubdir = true
-DefaultContentLanguage = "en"
+[markup.goldmark.renderer]
+unsafe= true
 
-# Site Params
+
+############################## Plugins ##############################
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/line-awesome/css/line-awesome.min.css"
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/instagram-feed/instagram-feed.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+
+# site variables
+[params.variables]
+font_primary = "Mulish"
+h1 = "64px"
+h1_lg = "52px"
+h1_md = "42px"
+h2 = "38px"
+h2_md = "30px"
+h3 = "30px"
+h3_md = "24px"
+h4 = "24px"
+h5 = "18px"
+h6 = "16px"
+white = "#ffffff"
+black = "#000000"
+dark = "#152035"
+gray = "#747577"
+light = "#FAFAFA"
+color_primary = "#01AD9F"
+
+#################### default parameters ################################
 [params]
 logo = "images/logo.png"
-
-# Gestion des langues : FR / EN / NL / DE
-[[Params.listeLangues]]
-code = "es"
-[[Params.listeLangues]]
-code = "en"
-
-# meta data
-author = "Themefisher"
+logo_height = "35px"
+favicon = "images/favicon.png"
+# Meta data
 description = "This is meta description"
+author = "Themefisher"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# search
+search = true
+# main section
+mainSections = ["blog"]
+# copyright
+copyright = "Designs and development by Pablo EA1FID"
 
-# Gestion des langues : FR / EN / NL / DE
-[Languages]
-############ 1 - Site en FRANCAIS
-[Languages.es]
-weight = 1
-languageCode = "es-es"
-title = "FIDtenas: open-source RF"
-dateFormat = "2 January 2006"
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
 
-home = "Home"
-logo = "images/logo.png"
-menufixed = false
+# Instagram feed
+[params.instafeed]
+enable = false
+instagram_user = "bookworm"
+access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1NmpxZA3RTbnU1MXpDNVBHTzZAMOFlxcGlkVHBKdjhqSnUybERhNWdQSE5hVmtXT013MEhOQVJJRGJBRURn"
 
-footerDescription = "Diseño de antenas open-source para bandas de VHF en adelante"
-footerServiceTitle = "Nuestro objetivo"
-footerQuicklinkTitle = "Acceso rápido"
-footerAboutTitle = "Sobre nosotros"
-footerSubscribeTitle = "Suscríbete"
-
-# Hero Area Section
-[Languages.es.params.hero]
-enable  = true
-heading = "La vanguardia de la RF al alcance de todos"
-description = "Desde FIDtenas, buscamos desarrollar hardware de RF utilizando las ténicas actuales más avanzadas para ofrecer de forma abierta diseños actualizados y optimizados a radioaficionados y entusiastas de las comunicaciones por radio"
-button  = true
-btnText = "Accede a nuestro repositorio"
-btnURL  = "https://github.com/pepassaco/FIDtennas"
-videoThumb = "images/slider/video-player-thumb.jpg"
-videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
-
-# About 2 Section
-[Languages.es.params.aboutSm]
-enable  = true
-title   = "Diseños optimizados para las comunicaciones entre radioaficionados"
-description = "No es igual diseñar una antena pensada para un enlace fijo punto a punto que para explotar modos de propagación como satélite, dispersión meteórica o aurora. Nuestra experiencia en el mundo de la radioafición nos capacita para optimizar las especificaciones de nuestros sistemas a aquellas más necesitadas por los radioaficionados, a fin de dotarlos de un rendimiento óptimo en su aplicación final."
-
-# Blog Section On Homepage
-[Languages.es.params.blog]
-enable  = true
-topTitle= "DISEÑOS OPEN-SOURCE"
-title   = "Antenas"
-subtitle= "En esta web encontrarás antenas para las principales bandas de radioaficionado desde los 50MHz hasta microondas. "
-
-# Contact Section
-[Languages.es.params.contact]
-enable  = true
-topTitle= "¿ALGUNA DUDA?"
-title   = "Contacto"
-subtitle= "Estaremos encantados de responder cualquier duda o comentario"
-#address = "14/05, Stockhome <br> Victori Palace , United States"
-#phone   = "(03) 9283 2617"
-#fax     = "+61 3827 3590"
-#facebook= "https://www.facebook.com/"
-twitter = "https://twitter.com/"
-#linkedin= "https://www.linkedin.com/"
-#dribbble= "https://dribbble.com/"
-instagram= "https://www.instagram.com/"
-#mapLatitude = "51.507351"
-#mapLongitude= "-0.127758"
-#mapMarker   = "images/marker.png"
-
-# Call to Action Section on About Page
-[Languages.es.params.cta]
-enable  = true
-bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-title   = "El autor"
-subtitle= "El autor de este proyecto y diseñador de los modelos publicados en esta web es Pablo EA1FID Álvarez. Ingeniero de Telecomunicaciones por la Universidad Politécnica de Madrid y radioaficionado desde temprana edad, cuenta con los conocimientos y experiencia necesarios para llevar a cabo las tareas de planificación, simulación electromagnética, optimización, diseño de modelos 3D y caracterización de sistemas de RF; aptitudes que garantizan el correcto desarrollo de FIDtenas"
-btnText = "Contacto"
-
-############# 2 - Site en ENGLISH
-[Languages.en]
-weight = 2
-languageCode = "en-us"
-title = "Example site multi-language"
-dateFormat = "January 2, 2006"
-home = "Home"
-logo = "images/logo.png"
-menufixed = false
-
-footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-footerServiceTitle = "Service"
-footerQuicklinkTitle = "Quicklinks"
-footerAboutTitle = "About"
-footerSubscribeTitle = "Subscribe"
-
+# Subscription
+[params.subscription]
+enable = false
+# mailchimp subsciption
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+title = "Subscribe for our monthly newsletter."
+input_placeholder = "Enter your email"
 
 # cookies
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
 
-# Hero Area Section
-[Languages.en.params.hero]
-enable  = true
-heading = "We love to make brands grow"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-button  = true
-btnText = "Know More"
-btnURL  = "https://themefisher.com/"
-videoThumb = "images/slider/video-player-thumb.jpg"
-videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
-# About 2 Section
-[Languages.en.params.aboutSm]
-enable  = true
-title   = "We have explored the digital landscape with passion for a long time"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+############################# Main Menu ########################
+[[menu.main]]
+weight = 1
+url = "/"
+name = "Home"
+  
+[[menu.main]]
+weight = 3
+url = "about"
+name = "About"
+  
+[[menu.main]]
+weight = 4
+url = "contact"
+name = "Contact"
 
-# Blog Section On Homepage
-[Languages.en.params.blog]
-enable  = true
-topTitle= "OUR UNTOLD STORY"
-title   = "Blog."
-subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+[[menu.main]]
+weight = 5
+url = "#"
+name = "Pages"
+hasChildren = true
 
-# Contact Section
-[Languages.en.params.contact]
-enable  = true
-topTitle= "DROP US A NOTE"
-title   = "Contact Us."
-subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-address = "14/05, Stockhome <br> Victori Palace , United States"
-phone   = "(03) 9283 2617"
-fax     = "+61 3827 3590"
-facebook= "https://www.facebook.com/"
-twitter = "https://twitter.com/"
-linkedin= "https://www.linkedin.com/"
-dribbble= "https://dribbble.com/"
-instagram= "https://www.instagram.com/"
-mapLatitude = "51.507351"
-mapLongitude= "-0.127758"
-mapMarker   = "images/marker.png"
+  [[menu.main]]
+  parent = "Pages"
+  weight = 1
+  url = "author/"
+  name = "Author"
+  
+  [[menu.main]]
+  parent = "Pages"
+  weight = 2
+  url = "tags/"
+  name = "Tags"
+  
+  [[menu.main]]
+  parent = "Pages"
+  weight = 3
+  url = "categories/"
+  name = "Category"
+  
+  [[menu.main]]
+  parent = "Pages"
+  weight = 4
+  url = "elements/"
+  name = "Elements"
+  
+  [[menu.main]]
+  parent = "Pages"
+  weight = 5
+  url = "privacy/"
+  name = "Privacy"
+  
+  [[menu.main]]
+  parent = "Pages"
+  weight = 6
+  url = "terms-conditions/"
+  name = "Terms & Conditions"
 
-# Call to Action Section on About Page
-[Languages.en.params.cta]
-enable  = true
-bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-title   = "Let's Create Something Together"
-subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-btnText = "Contact Us"
+############################# Footer Menu ########################
+[[menu.footer]]
+weight = 1
+url = "about/"
+name = "About"
 
-# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
+[[menu.footer]]
+weight = 2
+url = "author/"
+name = "Authors"
 
-# Site Menus
-[menu]
-# Navbar Menus
-[[menu.nav]]
-name    = "about"
-url     = "about"
-weight  = 2
-[[menu.nav]]
-name    = "service"
-url     = "service"
-weight  = 3
-[[menu.nav]]
-name    = "portfolio"
-url     = "portfolio"
-weight  = 4
-[[menu.nav]]
-name    = "blog"
-url     = "blog"
-weight  = 5
-[[menu.nav]]
-name    = "contact"
-url     = "contact"
-weight  = 6
+[[menu.footer]]
+weight = 3
+url = "privacy/"
+name = "Privacy"
 
-# Footer Service Menu
-[[menu.service]]
-name    = "graphicdesign"
-url     = "service"
-weight  = 1
-[[menu.service]]
-name    = "webdesign"
-url     = "service"
-weight  = 2
-[[menu.service]]
-name    = "webdevelopment"
-url     = "service"
-weight  = 3
+[[menu.footer]]
+weight = 4
+url = "terms-conditions/"
+name = "Terms & Conditions"
 
-# Footer Quick links Menu
-[[menu.quicklink]]
-name    = "partners"
-url     = "about"
-weight  = 1
-[[menu.quicklink]]
-name    = "about"
-url     = "about"
-weight  = 2
-[[menu.quicklink]]
-name    = "faqs"
-url     = "about"
-weight  = 3
-[[menu.quicklink]]
-name    = "badges"
-url     = "about"
-weight  = 4
+# Social Icons
+[[params.social]]
+url = "https://www.facebook.com/"
+icon = "lab la-facebook-f" # https://icons8.com/line-awesome
+
+[[params.social]]
+url = "https://www.twitter.com/"
+icon = "lab la-twitter" # https://icons8.com/line-awesome
+
+[[params.social]]
+url = "https://www.instagram.com/"
+icon = "lab la-instagram" # https://icons8.com/line-awesome
+
+[[params.social]]
+url = "https://www.linkedin.com/"
+icon = "lab la-linkedin-in" # https://icons8.com/line-awesome
