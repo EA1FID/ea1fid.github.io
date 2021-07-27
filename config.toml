@@ -71,7 +71,7 @@ color_primary = "#217FB0" #"#01AD9F"
 [params]
 logo = "images/logo_v2.png"
 logo_height = "110px"
-favicon = "images/favicon.ico"
+favicon = "images/favicon.png"
 # Meta data
 description = "This is meta description"
 author = "Themefisher"
