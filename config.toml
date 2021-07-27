@@ -133,13 +133,13 @@ hasChildren = true
   parent = "Designs"
   weight = 2
   url = "categories/"
-  name = "Categories"
+  name = "Frequency bands"
   
   [[menu.main]]
   parent = "Designs"
   weight = 3
   url = "tags/"
-  name = "Tags"
+  name = "Antenna models"
   
 [[menu.main]]
 weight = 3
