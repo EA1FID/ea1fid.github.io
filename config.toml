@@ -79,8 +79,8 @@ color_primary = "#217FB0" #"#01AD9F"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
-logo_height = "100px"
+logo = "images/logo_v4.3.png"
+logo_height = "90px"
 favicon = "images/favicon.ico"
 # Meta data
 description = "This is meta description"
