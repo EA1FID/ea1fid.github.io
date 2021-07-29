@@ -14,4 +14,4 @@ social:
 
 Telecommunications engineer by the Universidad Politécnica de Madrid and Ham Radio operator (callsign EA1FID) since an early age. Large experience in antenna design thanks to his job at the Microwaves and Radar Group of the Signals, Systems and Radiocommunications Deppartment of this university. 
 
-As a Ham Radio operator, he emphasizes his love for experimentation, both in trying all different forms of propagation (satellite, topo, meteor scatter, microwaves...) and in applying modern state-of-the-art techniques to Amateur Radio.
+As a Ham Radio operator, he emphasizes his love for experimentation, both in trying all different forms of propagation (satellite, tropo, meteor scatter, microwaves...) and in applying modern state-of-the-art techniques to Amateur Radio.
