@@ -1,7 +1,7 @@
 <!doctype html><html lang=en-us>
 <head>
 <meta charset=utf-8>
-<title>Raposo-2: an open-source LFA low-noise yagi for the 2m band</title>
+<title>Ollmol: a modern approach to Small Station EME</title>
 <meta name=author content="Themefisher">
 <meta name=description content="  This is meta description  ">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=5">
@@ -78,7 +78,7 @@
 <div class="row justify-content-center">
 <div class=col-lg-10>
 <div class="text-center mb-5">
-<h3 class="h2 mb-4 post-title">Raposo-2: an open-source LFA low-noise yagi for the 2m band</h3>
+<h3 class="h2 mb-4 post-title">Ollmol: a modern approach to Small Station EME</h3>
 <ul class="card-meta list-inline">
 <li class=list-inline-item>
 <a href=#! class=card-meta-author>
@@ -90,48 +90,45 @@
 </li>
 <li class=list-inline-item>|</li>
 <li class=list-inline-item>
-<span>12 January 2021</span>
+<span>22 April 2021</span>
 </li>
 </ul>
 </div>
 <div class="mb-5 text-center">
-<img loading=lazy class="img-fluid rounded" src=https://www.fidtenas.ga/images/post/2021-01-12-Raposo-2/model_c.png alt="Image not Found">
+<img loading=lazy class="img-fluid rounded" src=https://www.fidtenas.ga/images/post/2021-04-22-Ollomol/model_a.png alt="Image not Found">
 </div>
 <div class=content>
-<p>While Yagis using a folded dipole as the radiant element have been part of television systems since decades, they only started arriving at the amateur radio comunity some years ago. Raposo-2 aims to be one of the first open-source projects that makes building ultra-high performance homemade LFA yagis possible for everybody.</p>
-<p>One of the main advantages of the so-called LFA yagis is the use of a folded dipole as the active element instead of a Hertz dipole. This results in lower Side Lobes Levels, which, at the same time, translates to lower noise and interference levels. Raposo antennae aim to use this design topology in order to offer high gain while maintaining low noise on the receiver side. Note that these antennae have been optimised for achieving an optimal radiation pattern, perfect for working DX and even EME with an array of Raposos.</p>
+<p>Ollomol is our first antenna for the 23cm band. However, it is part of a very interesting amateur radio experiment: designing smaller antennae that can achieve Earth-Moon-Earth communications.</p>
+<p>One of the main characteristic of a small station for EME is its lack of a high output power capability. In order to compensate for this issue, amateur radio operators tend to search for those extra decibles in antenna gain. As such, they usually end up using either an array of two or four remarkably long (> 3m) yagis or a huge (>3.5m) parabolic disk in case of frequency bands above 23cm. These solutions exhibit a new problem: the need of notably large antennae.</p>
+<p>While large antennae will certainly get the job done, most of the people cannot install one at their QTH, either because of lack of space or because of legal issues. It is true that, in order to increase the gain of an antenna, there is no other solution than increasing also its size. Nevertheless, in this post, we are presenting an alternative procedure for achieving this goal: instead of using an array of few very large elements, using an array of numerous smaller antennae.</p>
+<p>The size of the antenna must be enlarged in some way in order to increase its overall gain. What we propose is, instead of increasing it in only the z axis, what ends up being a set of few 3m-long yagis, it would be nice to extend it in both the x axis, the y axis and the z axis proportionally, creating a compact design that fits the basic requirements for EME communications. As a result, we came up with a new antenna array based on more but smaller elements.</p>
+<h3 id=the-design>The design</h3>
+<p>First of all, from FIDtenas, we decided to design the radiant system of an EME station for the 23cm band for two main reasons. On the one hand, it is arguably the band with the <strong>greater number of users and big guns</strong> next to the 2m band. It is also growing extremely fast, so it is expected that the popularity of the 1.3GHz band ends up beating the 2m band soon. Second, because of the large number of resources that are available online for the amateur radio maker. From the cheap and easy to build <a href=https://www.w6pql.com/xrf-286_amplifiers_for_23cm.htm>power amplifiers</a> based on the <a href=https://pdf1.alldatasheet.es/datasheet-pdf/view/145981/MOTOROLA/XRF286.html>XRF286</a> to the easy to find transverters, it is definitely one of the bands where <strong>getting more than 100W is not expensive at all</strong>.</p>
+<p>When talking about our antenna, we must first justify the radiating element we are going to use. In our case, we decided to go for simple <strong>helical antennas</strong>. This is because they are easy to build, offer excellent specifications, they are super easy to tune (and offer enormous bandwidth) and they use <strong>circular polarization</strong>, as we need in order to work the 23cm band. As a drawback, since it is not possible to switch polarisation, we must build separate arrays for the transmitter and the receiver side. Nevertheless, the overall volume of the kit (3mx1.5mx0.5m) is still <strong>less than the volume of the parabollic reflector</strong> needed to obtain the same gain (2m of diameter, asuming a global efficiency of 70%), and we now have the ability of placing the transmitter and receiver subsystems at different places, transporting them easily for operating portable, a much lower wind loading and the capability of <strong>easily building such an antenna at home</strong> compared to a 2m parabolic reflector.</p>
+<p><img src=../../images/post/2021-04-22-Ollomol/model.png alt></p>
+<p>The array has been dimensioned to have a <strong>4x4 element structure</strong>. All of the helical elements are placed in front of a continuous ground plane. While this ground plane has been modeled as a square piece of perfect electric conductor, in the reality, the use of a <strong>metal mesh</strong> is recommended, in order to reduce the wing loading of the structure.</p>
+<p>The expert reader may have already noticed one of the problems of this antenna: shuch an array needs a <strong>feeding network</strong>. That&rsquo;s completely true! However, we propose a very simple design that anyone can make with simple coaxial cable. This is posible thanks to the nominal impedance of an helix antenna being 150Ω instead of just 50Ω. More on this at the end of the page.</p>
+<p>Finally, from FIDtenas, we thought that some of our readers may have been interested in the design of a <strong>longer single-helix antenna</strong>. Consequently, we designed one! With a length of just over 1m, it offers an incredible gain. You may also try to use it for EME or other DX contacts!</p>
+<p><img src=../../images/post/2021-04-22-Ollomol/model_l.png alt></p>
 <h3 id=main-features>Main features</h3>
-<p>Raposo-2 offers the perfect specifications for getting the most from the 2m band:</p>
+<p>The Ollomol antenna highlights some interesting new features:</p>
 <ul>
 <li>
-<p><strong>Low noise:</strong> its reduced SLL results in lower received noise, specially when pointing to higher elevations (satellites, EME and MS)</p>
+<p><strong>Smallest size:</strong> the global size of the transmitting antenna is only 1.5mx1.5mx0.5m, offering twice the gain of a 6m-long yagi</p>
 </li>
 <li>
-<p><strong>Two different versions:</strong> we have designed two different versions of the antenna: the original Raposo-2, ideal for those who want to achieve maximum performance on this band, and Raposo-2 Mini, with only 1,7m of boomlength, ideal for reduced spaces, using in arrays or even working MS thanks to its lower gain</p>
+<p><strong>Lowest noise:</strong> the increase in the number of elements of the array brings a huge reduction in the Front/Back ratio and Side Lobes Levels of the radiation pattern due to the inclusion of a bigger ground pland and the cancellations of some of the spurious radiations of each individual antenna</p>
 </li>
 <li>
-<p><strong>Optimised for Amatur Radio:</strong> Raposo-2 is the ideal antenna for Amateur Radio, since it has been designed specifically for its use at long range radio communications</p>
+<p><strong>Cheapest build:</strong> all of the materials needed for building this antenna can be bought at any hardware store. Moreover, the use of two different antennae for transmitting and receiving allows the user not to depend on a coaxial relay, connecting the TX side directly to the power amplifier and, the RX side, to an LNA and an SDR</p>
 </li>
 <li>
-<p><strong>Different materials:</strong> it is possible to buils this antenna by using either non-conductive or conductive booms, thanks to the 3D printable supports from our GitHub repository. Besides, you can choose the diameter of the elements beween M3 and M6 metrics according to your needs</p>
+<p><strong>Optimised for Amatur Radio:</strong> Ollomol has been design to offer fantastic specifications around the whole 23cm band</p>
 </li>
 </ul>
-<table>
-<thead>
-<tr>
-<th style=text-align:center>Raposo-2</th>
-<th style=text-align:center>Raposo-2 Mini</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style=text-align:center><img src=../../images/post/2021-01-12-Raposo-2/model.png alt></td>
-<td style=text-align:center><img src=../../images/post/2021-01-12-Raposo-2/model_c.png alt></td>
-</tr>
-</tbody>
-</table>
+<p><img src=../../images/post/2021-04-22-Ollomol/model_a.png alt></p>
 <h3 id=antenna-specifications>Antenna Specifications</h3>
-<h4 id=raposo-2-145mhz--2m>Raposo-2 145MHz / 2m</h4>
+<h4 id=ollomol-1296mhz--23cm-single-element>Ollomol 1296MHz / 23cm (Single element)</h4>
 <table>
 <thead>
 <tr>
@@ -143,67 +140,67 @@
 <tbody>
 <tr>
 <td style=text-align:center>Gain</td>
-<td style=text-align:center>12.89</td>
+<td style=text-align:center>14.0</td>
 <td style=text-align:center>dBi</td>
 </tr>
 <tr>
 <td style=text-align:center>3 dB Beamwidth (E plane)</td>
-<td style=text-align:center>42.2</td>
+<td style=text-align:center>34.2</td>
 <td style=text-align:center>º</td>
 </tr>
 <tr>
 <td style=text-align:center>3 dB Beamwidth (H plane)</td>
-<td style=text-align:center>48.1</td>
+<td style=text-align:center>34.3</td>
 <td style=text-align:center>º</td>
 </tr>
 <tr>
 <td style=text-align:center>Efficiency</td>
-<td style=text-align:center>99.8</td>
+<td style=text-align:center>96.0</td>
 <td style=text-align:center>%</td>
 </tr>
 <tr>
 <td style=text-align:center>Impedance</td>
-<td style=text-align:center>50</td>
+<td style=text-align:center>150</td>
 <td style=text-align:center>Ω</td>
 </tr>
 <tr>
 <td style=text-align:center>Lowest SWR</td>
-<td style=text-align:center>1.03</td>
+<td style=text-align:center>1.4</td>
 <td style=text-align:center>-</td>
 </tr>
 <tr>
 <td style=text-align:center>Bandwidth</td>
-<td style=text-align:center>1.97</td>
+<td style=text-align:center>308</td>
 <td style=text-align:center>MHz</td>
 </tr>
 <tr>
 <td style=text-align:center></td>
-<td style=text-align:center>1.37</td>
+<td style=text-align:center>23</td>
 <td style=text-align:center>%</td>
 </tr>
 <tr>
 <td style=text-align:center>SLL (E plane)</td>
-<td style=text-align:center>-22.3</td>
+<td style=text-align:center>-13.8</td>
 <td style=text-align:center>dB</td>
 </tr>
 <tr>
 <td style=text-align:center>SLL (H plane)</td>
-<td style=text-align:center>-15.4</td>
+<td style=text-align:center>-13.6</td>
 <td style=text-align:center>dB</td>
 </tr>
 <tr>
 <td style=text-align:center>Polarization</td>
-<td style=text-align:center>Linear</td>
+<td style=text-align:center>Circular</td>
 <td style=text-align:center>-</td>
 </tr>
 <tr>
 <td style=text-align:center>XPD</td>
-<td style=text-align:center>>60</td>
+<td style=text-align:center>20</td>
 <td style=text-align:center>dB</td>
 </tr>
 <tr>
 <td style=text-align:center>F/B</td>
-<td style=text-align:center>23.7</td>
+<td style=text-align:center>24.7</td>
 <td style=text-align:center>dB</td>
 </tr>
 </tbody>
@@ -218,13 +215,13 @@
 </thead>
 <tbody>
 <tr>
-<td style=text-align:center><img src=../../images/post/2021-01-12-Raposo-2/FF.png alt></td>
-<td style=text-align:center><img src=../../images/post/2021-01-12-Raposo-2/SWR.png alt></td>
+<td style=text-align:center><img src=../../images/post/2021-04-22-Ollomol/FF.png alt></td>
+<td style=text-align:center><img src=../../images/post/2021-04-22-Ollomol/SWR.png alt></td>
 </tr>
 </tbody>
 </table>
-<p><img src=../../images/post/2021-01-12-Raposo-2/3D.png alt></p>
-<h4 id=raposo-2-mini-145mhz--2m>Raposo-2 Mini 145MHz / 2m</h4>
+<p><img src=../../images/post/2021-04-22-Ollomol/3D.png alt></p>
+<h4 id=ollomol-1296mhz--23cm-full-array>Ollomol 1296MHz / 23cm (full array)</h4>
 <table>
 <thead>
 <tr>
@@ -236,72 +233,72 @@
 <tbody>
 <tr>
 <td style=text-align:center>Gain</td>
-<td style=text-align:center>10.6</td>
+<td style=text-align:center>26.2</td>
 <td style=text-align:center>dBi</td>
 </tr>
 <tr>
 <td style=text-align:center>3 dB Beamwidth (E plane)</td>
-<td style=text-align:center>51.9</td>
+<td style=text-align:center>7.3</td>
 <td style=text-align:center>º</td>
 </tr>
 <tr>
 <td style=text-align:center>3 dB Beamwidth (H plane)</td>
-<td style=text-align:center>66.2</td>
+<td style=text-align:center>7.3</td>
 <td style=text-align:center>º</td>
 </tr>
 <tr>
 <td style=text-align:center>Efficiency</td>
-<td style=text-align:center>99.7</td>
+<td style=text-align:center>95.1</td>
 <td style=text-align:center>%</td>
 </tr>
 <tr>
-<td style=text-align:center>Impedance</td>
+<td style=text-align:center>Impedance*</td>
 <td style=text-align:center>50</td>
 <td style=text-align:center>Ω</td>
 </tr>
 <tr>
 <td style=text-align:center>Lowest SWR</td>
-<td style=text-align:center>1.03</td>
+<td style=text-align:center>1.4</td>
 <td style=text-align:center>-</td>
 </tr>
 <tr>
 <td style=text-align:center>Bandwidth</td>
-<td style=text-align:center>1.98</td>
+<td style=text-align:center>310</td>
 <td style=text-align:center>MHz</td>
 </tr>
 <tr>
 <td style=text-align:center></td>
-<td style=text-align:center>1.38</td>
+<td style=text-align:center>23</td>
 <td style=text-align:center>%</td>
 </tr>
 <tr>
 <td style=text-align:center>SLL (E plane)</td>
-<td style=text-align:center>-20.8</td>
+<td style=text-align:center>-12.5</td>
 <td style=text-align:center>dB</td>
 </tr>
 <tr>
 <td style=text-align:center>SLL (H plane)</td>
-<td style=text-align:center>-16.0</td>
+<td style=text-align:center>-12.6</td>
 <td style=text-align:center>dB</td>
 </tr>
 <tr>
 <td style=text-align:center>Polarization</td>
-<td style=text-align:center>Linear</td>
+<td style=text-align:center>Circular</td>
 <td style=text-align:center>-</td>
 </tr>
 <tr>
 <td style=text-align:center>XPD</td>
-<td style=text-align:center>>60</td>
+<td style=text-align:center>24.9</td>
 <td style=text-align:center>dB</td>
 </tr>
 <tr>
 <td style=text-align:center>F/B</td>
-<td style=text-align:center>21.2</td>
+<td style=text-align:center>37.7</td>
 <td style=text-align:center>dB</td>
 </tr>
 </tbody>
 </table>
-<p><em>Note: bandwidth is measured between points at 1.5 SWR (very conesrvative measure). XPD is referred to broadside direction</em></p>
+<p><em>Note: bandwidth is measured between points at 2 SWR. XPD is referred to broadside direction</em></p>
 <table>
 <thead>
 <tr>
@@ -311,12 +308,105 @@
 </thead>
 <tbody>
 <tr>
-<td style=text-align:center><img src=../../images/post/2021-01-12-Raposo-2/FF_c.png alt></td>
-<td style=text-align:center><img src=../../images/post/2021-01-12-Raposo-2/SWR_c.png alt></td>
+<td style=text-align:center><img src=../../images/post/2021-04-22-Ollomol/FF_a.png alt></td>
+<td style=text-align:center><img src=../../images/post/2021-04-22-Ollomol/SWR.png alt></td>
 </tr>
 </tbody>
 </table>
-<p><img src=../../images/post/2021-01-12-Raposo-2/3D_c.png alt></p>
+<p><img src=../../images/post/2021-04-22-Ollomol/3D_a.png alt></p>
+<h4 id=ollomol-1296mhz--23cm-single-helix-version>Ollomol 1296MHz / 23cm (single-helix version)</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>Specification</strong></th>
+<th style=text-align:center><strong>Value</strong></th>
+<th style=text-align:center><strong>Units</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>Gain</td>
+<td style=text-align:center>21.7</td>
+<td style=text-align:center>dBi</td>
+</tr>
+<tr>
+<td style=text-align:center>3 dB Beamwidth (E plane)</td>
+<td style=text-align:center>11.8</td>
+<td style=text-align:center>º</td>
+</tr>
+<tr>
+<td style=text-align:center>3 dB Beamwidth (H plane)</td>
+<td style=text-align:center>11.8</td>
+<td style=text-align:center>º</td>
+</tr>
+<tr>
+<td style=text-align:center>Efficiency</td>
+<td style=text-align:center>93.8</td>
+<td style=text-align:center>%</td>
+</tr>
+<tr>
+<td style=text-align:center>Impedance*</td>
+<td style=text-align:center>150</td>
+<td style=text-align:center>Ω</td>
+</tr>
+<tr>
+<td style=text-align:center>Lowest SWR</td>
+<td style=text-align:center>1.5</td>
+<td style=text-align:center>-</td>
+</tr>
+<tr>
+<td style=text-align:center>Bandwidth</td>
+<td style=text-align:center>350</td>
+<td style=text-align:center>MHz</td>
+</tr>
+<tr>
+<td style=text-align:center></td>
+<td style=text-align:center>27</td>
+<td style=text-align:center>%</td>
+</tr>
+<tr>
+<td style=text-align:center>SLL (E plane)</td>
+<td style=text-align:center>-11.0</td>
+<td style=text-align:center>dB</td>
+</tr>
+<tr>
+<td style=text-align:center>SLL (H plane)</td>
+<td style=text-align:center>-11.2</td>
+<td style=text-align:center>dB</td>
+</tr>
+<tr>
+<td style=text-align:center>Polarization</td>
+<td style=text-align:center>Circular</td>
+<td style=text-align:center>-</td>
+</tr>
+<tr>
+<td style=text-align:center>XPD</td>
+<td style=text-align:center>22.4</td>
+<td style=text-align:center>dB</td>
+</tr>
+<tr>
+<td style=text-align:center>F/B</td>
+<td style=text-align:center>27.5</td>
+<td style=text-align:center>dB</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: bandwidth is measured between points at 2 SWR. XPD is referred to broadside direction</em></p>
+<table>
+<thead>
+<tr>
+<th style=text-align:center>Simulated radiation pattern</th>
+<th style=text-align:center>Simulated SWR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center><img src=../../images/post/2021-04-22-Ollomol/FF_l.png alt></td>
+<td style=text-align:center><img src=../../images/post/2021-04-22-Ollomol/SWR.png alt></td>
+</tr>
+</tbody>
+</table>
+<p><img src=../../images/post/2021-04-22-Ollomol/3D_l.png alt></p>
 <h3 id=assembly-and-usage-advices>Assembly and usage advices</h3>
 <blockquote>
 <p>All of the measurements, plans, .stl files and more can be found in our <a href=https://github.com/pepassaco/FIDtennas>GitHub repository</a></p>
@@ -355,13 +445,13 @@
 <div class="row justify-content-center">
 <div class="col-lg-5 col-md-6 text-center text-md-left">
 <ul class="post-meta-tags list-unstyled list-inline">
-<li class=list-inline-item><a href=https://www.fidtenas.ga/bands/2m>2m</a></li>
+<li class=list-inline-item><a href=https://www.fidtenas.ga/bands/23cm>23cm</a></li>
 </ul>
 </div>
 <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
 <ul class="social-links has-bg-color list-unstyled list-inline" style=line-height:0>
 <li class=list-inline-item>
-<a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-01-12-raposo-2%2f" target=_blank rel=noopener aria-label>
+<a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-04-22-ollomol%2f" target=_blank rel=noopener aria-label>
 <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
 <div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 <i class="lab la-facebook-f text-dark"></i>
@@ -370,7 +460,7 @@
 </a>
 </li>
 <li class=list-inline-item>
-<a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=Raposo-2%3a%20an%20open-source%20LFA%20low-noise%20yagi%20for%20the%202m%20band&url=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-01-12-raposo-2%2f" target=_blank rel=noopener aria-label>
+<a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=Ollmol%3a%20a%20modern%20approach%20to%20Small%20Station%20EME&url=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-04-22-ollomol%2f" target=_blank rel=noopener aria-label>
 <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
 <div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 <i class="lab la-twitter text-dark"></i>
@@ -379,7 +469,7 @@
 </a>
 </li>
 <li class=list-inline-item>
-<a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-01-12-raposo-2%2f" target=_blank rel=noopener aria-label>
+<a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-04-22-ollomol%2f" target=_blank rel=noopener aria-label>
 <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
 <div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 <i class="lab la-google-plus-g text-dark"></i>
@@ -388,7 +478,7 @@
 </a>
 </li>
 <li class=list-inline-item>
-<a class="resp-sharing-button__link d-block" href="mailto:?subject=Raposo-2%3a%20an%20open-source%20LFA%20low-noise%20yagi%20for%20the%202m%20band&body=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-01-12-raposo-2%2f" target=_self rel=noopener aria-label>
+<a class="resp-sharing-button__link d-block" href="mailto:?subject=Ollmol%3a%20a%20modern%20approach%20to%20Small%20Station%20EME&body=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-04-22-ollomol%2f" target=_self rel=noopener aria-label>
 <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
 <div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 <i class="las la-envelope text-dark"></i>
@@ -397,7 +487,7 @@
 </a>
 </li>
 <li class=list-inline-item>
-<a class="resp-sharing-button__link d-block" href="whatsapp://send?text=Raposo-2%3a%20an%20open-source%20LFA%20low-noise%20yagi%20for%20the%202m%20band%20https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-01-12-raposo-2%2f" target=_blank rel=noopener aria-label>
+<a class="resp-sharing-button__link d-block" href="whatsapp://send?text=Ollmol%3a%20a%20modern%20approach%20to%20Small%20Station%20EME%20https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-04-22-ollomol%2f" target=_blank rel=noopener aria-label>
 <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
 <div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 <i class="lab la-whatsapp text-dark"></i>
