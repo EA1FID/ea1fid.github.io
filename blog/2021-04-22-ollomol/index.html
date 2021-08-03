@@ -108,7 +108,7 @@
 <p><img src=../../images/post/2021-04-22-Ollomol/model.png alt></p>
 <p>The array has been dimensioned to have a <strong>4x4 element structure</strong>. All of the helical elements are placed in front of a continuous ground plane. While this ground plane has been modeled as a square piece of perfect electric conductor, in the reality, the use of a <strong>metal mesh</strong> is recommended, in order to reduce the wing loading of the structure.</p>
 <p>The expert reader may have already noticed one of the problems of this antenna: shuch an array needs a <strong>feeding network</strong>. That&rsquo;s completely true! However, we propose a very simple design that anyone can make with simple coaxial cable. This is posible thanks to the nominal impedance of an helix antenna being 150Ω instead of just 50Ω. More on this at the end of the page.</p>
-<p>Finally, from FIDtenas, we thought that some of our readers may have been interested in the design of a <strong>longer single-helix antenna</strong>. Consequently, we designed one! With a length of just over 1m, it offers an incredible gain. You may also try to use it for EME or other DX contacts!</p>
+<p>Finally, from FIDtenas, we thought that some of our readers may have been interested in the design of a <strong>longer single-helix antenna</strong>. Consequently, we designed one! With a length of just over 1m, it offers an incredible gain. You may also try to use it for EME or other DX contacts! Its full specifications are shown in the section below.</p>
 <p><img src=../../images/post/2021-04-22-Ollomol/model_l.png alt></p>
 <h3 id=main-features>Main features</h3>
 <p>The Ollomol antenna highlights some interesting new features:</p>
@@ -407,6 +407,8 @@
 </tbody>
 </table>
 <p><img src=../../images/post/2021-04-22-Ollomol/3D_l.png alt></p>
+<h3 id=the-feeding-network>The feeding network</h3>
+<p>TODO</p>
 <h3 id=assembly-and-usage-advices>Assembly and usage advices</h3>
 <blockquote>
 <p>All of the measurements, plans, .stl files and more can be found in our <a href=https://github.com/pepassaco/FIDtennas>GitHub repository</a></p>
@@ -420,22 +422,13 @@
 <p><strong>Use white ABS</strong> with enought infill if you are going to use this antenna for extended periods of time in places with high temperatures.</p>
 </li>
 <li>
-<p>The <strong>optimal diameter</strong> of the elements is either <strong>M3 or M4</strong>. A higher diameter may deform the radiation pattern and increase the overall weight of the antenna.</p>
+<p>Use a <strong>small enought</strong> metal mesh. A metal mesh with big holes will not be seen as a good ground plane at these frequencies. Besides, avoind any wrinkles or knots in the final mount.</p>
 </li>
 <li>
-<p>The use of a <strong>balun or RF choke</strong> is recommended. Use either some ferrite cores at the end of the coaxial cable or a suitable 1:1 balun/transformer.</p>
+<p>If you are planning to build the long single-helix version, recall that <strong>its input impedance is 150Ω</strong>. You may want to use a copper strip match to lower down this value before transmitting anything.</p>
 </li>
 <li>
-<p>If you plan on building the <strong>Raposo-2 Mini</strong> version, recall that the length of the dipole is approximately <strong>1cm longer</strong> than the corresponding length for the original Raposo-2. The rest of the measures remain the same.</p>
-</li>
-<li>
-<p>It is recommended to place this antenna at least <strong>1.8m above ground.</strong></p>
-</li>
-<li>
-<p>It is possible to <strong>stack</strong> more than one Raposo-2 in order to build an antenna array. Optimal stacking distance in order to achieve increased gain without generating large grating lobes is between 2.3 and 2.5m for horizontal stacking and 2.1 to 2.35 for vertical stacking.</p>
-</li>
-<li>
-<p>The use of a <strong>vertical metal tubing</strong> perpendicular to the elements as <strong>antenna support</strong> does not affect the overall performance of Raposo-70.</p>
+<p>It is very important to <strong>follow the described procedure</strong> for assembling the feeding network. Otherwise, you may end up with incredibly high SWR values or degenerated radiation patterns.</p>
 </li>
 </ul>
 </div>
