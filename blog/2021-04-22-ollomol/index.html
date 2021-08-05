@@ -252,8 +252,8 @@
 <td style=text-align:center>%</td>
 </tr>
 <tr>
-<td style=text-align:center>Impedance*</td>
-<td style=text-align:center>50</td>
+<td style=text-align:center>Impedance</td>
+<td style=text-align:center>140-50j</td>
 <td style=text-align:center>Ω</td>
 </tr>
 <tr>
@@ -262,13 +262,8 @@
 <td style=text-align:center>-</td>
 </tr>
 <tr>
-<td style=text-align:center>Bandwidth</td>
-<td style=text-align:center>310</td>
-<td style=text-align:center>MHz</td>
-</tr>
-<tr>
-<td style=text-align:center></td>
-<td style=text-align:center>23</td>
+<td style=text-align:center>Bandwidth*</td>
+<td style=text-align:center>>20</td>
 <td style=text-align:center>%</td>
 </tr>
 <tr>
@@ -298,7 +293,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Note: bandwidth is measured between points at 2 SWR. XPD is referred to broadside direction</em></p>
+<p><em>Note: bandwidth is measured between points at 1.5 SWR. XPD is referred to broadside direction</em></p>
 <table>
 <thead>
 <tr>
@@ -346,7 +341,7 @@
 </tr>
 <tr>
 <td style=text-align:center>Impedance*</td>
-<td style=text-align:center>150</td>
+<td style=text-align:center>140-50j</td>
 <td style=text-align:center>Ω</td>
 </tr>
 <tr>
@@ -356,12 +351,7 @@
 </tr>
 <tr>
 <td style=text-align:center>Bandwidth</td>
-<td style=text-align:center>350</td>
-<td style=text-align:center>MHz</td>
-</tr>
-<tr>
-<td style=text-align:center></td>
-<td style=text-align:center>27</td>
+<td style=text-align:center>>20</td>
 <td style=text-align:center>%</td>
 </tr>
 <tr>
@@ -391,7 +381,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Note: bandwidth is measured between points at 2 SWR. XPD is referred to broadside direction</em></p>
+<p><em>Note: bandwidth is measured between points at 1.5 SWR. XPD is referred to broadside direction</em></p>
 <table>
 <thead>
 <tr>
@@ -408,7 +398,10 @@
 </table>
 <p><img src=../../images/post/2021-04-22-Ollomol/3D_l.png alt></p>
 <h3 id=feeding-network>Feeding network</h3>
-<p>TODO</p>
+<p>The feeding network is one of the most important and crucial parts of the antenna: not only will it connect all of the 16 radiating elements to a single port but also match the whole array to an impedance of 50Ω.</p>
+<p>Since we want an array with maximum gain and pointing towards the broadside direction, all the elements will be excited with exactly the same phase: all of the electrical lines from the input port to each of them must have the exact same electrical length. It is very important then to be very precise with the measures when cutting the coaxial lines.</p>
+<p>Without further explaination, the network design can be seen in the following figures. Note that the 37,5Ω lines can be easily obtained by soldering in parallel two 75Ω sections of coaxial and tieing them together. Besides, the length of each section is specified below. Recall that tit is possible to cut the length in the specified base electrical length plus an exact multiple of λ/2. If you go for this, make sure that you maintain the same length on each side of the network, that is, the <em>k</em> parameter you choose remains constant for all the elements.</p>
+<p>Finally, remember that the wavelength inside the coax is different that the one in free space. Calculate first the wavelength in your coax (both the 50Ω one and the 75Ω one) before computing the desired length of each of the lines.</p>
 <p><strong>Orange:</strong> line of length 0.47λ + <em>k</em> · λ/2 (for positive integer <em>k</em>)</p>
 <p><strong>Blue:</strong> line of length 0.25λ + <em>k</em> · λ/2 (for positive integer <em>k</em>)</p>
 <table>
@@ -425,6 +418,7 @@
 </tr>
 </tbody>
 </table>
+<p>As a basic explaination, an helical antenna has, at its central resonant frequency, an impedance of around 140Ω minus some imaginary part (capacitive loading). Our simulations show that, for values around 1296MHz, this impedance corresponds to 140-50jΩ. Then, the first step of the newtork is using a 0.47λ section to transform it to a real impedance of 165Ω. Afterwards, it is easy to obtain the desired impedances at each step by using classical λ/4 transformers, and obtaining a final impedance of 53,3Ω. Note that this corrresponds to a reflection coefficient of 0,03 or a SWR of just 1,06, with the final loss by impedance missmatch being only 0.004dB!</p>
 <h3 id=assembly-and-usage-advices>Assembly and usage advices</h3>
 <blockquote>
 <p>All of the measurements, plans, .stl files and more can be found in our <a href=https://github.com/pepassaco/FIDtennas>GitHub repository</a></p>
