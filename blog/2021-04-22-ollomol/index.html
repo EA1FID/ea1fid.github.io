@@ -107,7 +107,7 @@
 <p>When talking about our antenna, we must first justify the radiating element we are going to use. In our case, we decided to go for simple <strong>helical antennas</strong>. This is because they are easy to build, offer excellent specifications, they are super easy to tune (and offer enormous bandwidth) and they use <strong>circular polarization</strong>, as we need in order to work the 23cm band. As a drawback, since it is not possible to switch polarisation, we must build separate arrays for the transmitter and the receiver side. Nevertheless, the overall volume of the kit (3mx1.5mx0.5m) is still <strong>less than the volume of the parabollic reflector</strong> needed to obtain the same gain (2m of diameter, asuming a global efficiency of 70%), and we now have the ability of placing the transmitter and receiver subsystems at different places, transporting them easily for operating portable, a much lower wind loading and the capability of <strong>easily building such an antenna at home</strong> compared to a 2m parabolic reflector.</p>
 <p><img src=../../images/post/2021-04-22-Ollomol/model.png alt></p>
 <p>The array has been dimensioned to have a <strong>4x4 element structure</strong>. All of the helical elements are placed in front of a continuous ground plane. While this ground plane has been modeled as a square piece of perfect electric conductor, in the reality, the use of a <strong>metal mesh</strong> is recommended, in order to reduce the wing loading of the structure.</p>
-<p>The expert reader may have already noticed one of the problems of this antenna: shuch an array needs a <strong>feeding network</strong>. That&rsquo;s completely true! However, we propose a very simple design that anyone can make with simple coaxial cable. This is posible thanks to the nominal impedance of an helix antenna being 150Ω instead of just 50Ω. More on this at the end of the page.</p>
+<p>The expert reader may have already noticed one of the problems of this antenna: shuch an array needs a <strong>feeding network</strong>. That&rsquo;s completely true! However, we propose a very simple design that anyone can make with simple coaxial cable. This is posible thanks to the nominal impedance of an helix antenna being 140Ω instead of just 50Ω. More on this at the end of the page.</p>
 <p>Finally, from FIDtenas, we thought that some of our readers may have been interested in the design of a <strong>longer single-helix antenna</strong>. Consequently, we designed one! With a length of just over 1m, it offers an incredible gain. You may also try to use it for EME or other DX contacts! Its full specifications are shown in the section below.</p>
 <p><img src=../../images/post/2021-04-22-Ollomol/model_l.png alt></p>
 <h3 id=main-features>Main features</h3>
@@ -117,13 +117,13 @@
 <p><strong>Smallest size:</strong> the global size of the transmitting antenna is only 1.5mx1.5mx0.5m, offering twice the gain of a 6m-long yagi</p>
 </li>
 <li>
-<p><strong>Lowest noise:</strong> the increase in the number of elements of the array brings a huge reduction in the Front/Back ratio and Side Lobes Levels of the radiation pattern due to the inclusion of a bigger ground pland and the cancellations of some of the spurious radiations of each individual antenna</p>
+<p><strong>Lowest noise:</strong> the increase in the number of elements of the array brings a huge increase in the Front/Back ratio and a small reduction in the Side Lobes Levels of the radiation pattern due to the inclusion of a bigger ground plane and the cancellation of spurious radiations of each individual element</p>
 </li>
 <li>
 <p><strong>Cheapest build:</strong> all of the materials needed for building this antenna can be bought at any hardware store. Moreover, the use of two different antennae for transmitting and receiving allows the user not to depend on a coaxial relay, connecting the TX side directly to the power amplifier and, the RX side, to an LNA and an SDR</p>
 </li>
 <li>
-<p><strong>Optimised for Amatur Radio:</strong> Ollomol has been design to offer fantastic specifications around the whole 23cm band</p>
+<p><strong>Optimised for Amateur Radio:</strong> Ollomol has been design to offer fantastic specifications around the whole 23cm band</p>
 </li>
 </ul>
 <p><img src=../../images/post/2021-04-22-Ollomol/model_a.png alt></p>
@@ -160,7 +160,7 @@
 </tr>
 <tr>
 <td style=text-align:center>Impedance</td>
-<td style=text-align:center>150</td>
+<td style=text-align:center>140-50j</td>
 <td style=text-align:center>Ω</td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Note: bandwidth is measured between points at 1.5 SWR (very conesrvative measure). XPD is referred to broadside direction</em></p>
+<p><em>Note: bandwidth is measured between points at 1.5 SWR (very conesrvative measure). A matching technique must be used in order to use it with 50Ω transceivers. XPD is referred to broadside direction</em></p>
 <table>
 <thead>
 <tr>
@@ -253,7 +253,7 @@
 </tr>
 <tr>
 <td style=text-align:center>Impedance</td>
-<td style=text-align:center>140-50j</td>
+<td style=text-align:center>50</td>
 <td style=text-align:center>Ω</td>
 </tr>
 <tr>
@@ -293,7 +293,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Note: bandwidth is measured between points at 1.5 SWR. XPD is referred to broadside direction</em></p>
+<p><em>Note: bandwidth is measured between points at 1.5 SWR, and is referred to the input port of the feeding network. XPD is referred to broadside direction</em></p>
 <table>
 <thead>
 <tr>
@@ -381,7 +381,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Note: bandwidth is measured between points at 1.5 SWR. XPD is referred to broadside direction</em></p>
+<p><em>Note: bandwidth is measured between points at 1.5 SWR. A matching technique must be used in order to use it with 50Ω transceivers. XPD is referred to broadside direction</em></p>
 <table>
 <thead>
 <tr>
@@ -404,11 +404,12 @@
 <p>Finally, remember that the wavelength inside the coax is different that the one in free space. Calculate first the wavelength in your coax (both the 50Ω one and the 75Ω one) before computing the desired length of each of the lines.</p>
 <p><strong>Orange:</strong> line of length 0.47λ + <em>k</em> · λ/2 (for positive integer <em>k</em>)</p>
 <p><strong>Blue:</strong> line of length 0.25λ + <em>k</em> · λ/2 (for positive integer <em>k</em>)</p>
+<p><strong>Black:</strong> these <strong>are not</strong> transmission lines and <strong>must not be implemented</strong> with any coax. That are just used as a referenece of the input impedance at that point. Increase the value of <em>k</em> in the aforementioned expressions if you need longer lines.</p>
 <table>
 <thead>
 <tr>
 <th style=text-align:center>Rows connections</th>
-<th style=text-align:center>Cols connections</th>
+<th style=text-align:center>Columns connections</th>
 </tr>
 </thead>
 <tbody>
