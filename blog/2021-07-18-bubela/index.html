@@ -1,0 +1,467 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<title>Bubela: an advanced patch for the 13cm band and QO-100</title>
+<meta name=author content="Themefisher">
+<meta name=description content="  This is meta description  ">
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=5">
+<link rel=icon href=https://www.fidtenas.ga/images/favicon.ico type=image/x-icon>
+<link rel=preconnect href=https://fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap">
+<link rel=stylesheet href=https://www.fidtenas.ga/css/vendor.min.e68e9f7f3e6d2a203796a8e50b50db48ab394bf8d0f60a580356046743390c4d99b50b0dcf80daa30568504adfe30bbc123e3ae80a107a0b2a42776dc343adab.css integrity="sha512-5o6ffz5tKiA3lqjlC1DbSKs5S/jQ9gpYA1YEZ0M5DE2ZtQsNz4DaowVoUErf4wu8Ej466AoQegsqQndtw0Otqw==" media=screen>
+</head>
+<body>
+<div class=header-height-fix></div>
+<header class=header-nav>
+<div class=container>
+<div class=row>
+<div class=col-12>
+<nav class="navbar navbar-expand-lg navbar-light p-0">
+<a class="navbar-brand font-weight-bold mr-0" href=https://www.fidtenas.ga>
+<img loading=lazy src=https://www.fidtenas.ga/images/logo_v4.3.png alt="FIDtenas | Open-source RF hardware for Amateur Radio" height=90px>
+</a>
+<button class="search-toggle d-inline-block d-lg-none ml-auto mr-3" data-toggle=search aria-label="Search Toggle">
+<i class="las la-search"></i>
+</button>
+<button class=navbar-toggler type=button data-toggle=collapse data-target=#navHeader aria-controls=navHeader aria-expanded=false aria-label="Toggle navigation">
+<i class="d-inline lab la-buromobelexperte"></i>
+<i class="d-none las la-times"></i>
+</button>
+<div class="collapse navbar-collapse" id=navHeader>
+<ul class="navbar-nav mx-auto">
+<li class=nav-item>
+<a class=nav-link href=https://www.fidtenas.ga/>Home</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle d-inline-block" href=# role=button data-toggle=dropdown aria-expanded=false>Designs</a>
+<ul class=dropdown-menu>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/>All</a></li>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/bands/>Frequency bands</a></li>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/models/>Antenna models</a></li>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/categories/>Categories</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle d-inline-block" href=# role=button data-toggle=dropdown aria-expanded=false>About</a>
+<ul class=dropdown-menu>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/about>FIDtenas</a></li>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/author/>Author</a></li>
+<li><a class=dropdown-item href=https://www.fidtenas.ga/contact>Contact</a></li>
+</ul>
+</li>
+</ul>
+<div class="navbar-right d-none d-lg-inline-block">
+<ul class="social-links list-unstyled list-inline">
+<li class="list-inline-item ml-4 d-none d-lg-inline-block">
+<button class=search-toggle data-toggle=search aria-label="Search Toggle">
+<i class="las la-search"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<div class=search-block>
+<div data-toggle=search-close>
+<i class="las la-times text-primary"></i>
+</div>
+<form action=/search>
+<input id=search-query name=s type=search placeholder="Type words & hit enter" class=text-center aria-label=search-query>
+</form>
+</div>
+<section class=section-sm>
+<div class=container>
+<div class="row justify-content-center">
+<div class=col-lg-10>
+<div class="text-center mb-5">
+<h3 class="h2 mb-4 post-title">Bubela: an advanced patch for the 13cm band and QO-100</h3>
+<ul class="card-meta list-inline">
+<li class=list-inline-item>
+<a href=#! class=card-meta-author>
+<a href=https://www.fidtenas.ga/author/ea1fid/ class=card-meta-author>
+<img loading=lazy src=https://www.fidtenas.ga/images/author/ea1fid.jpg alt="Pablo EA1FID Álvarez">
+<span>Pablo EA1FID Álvarez</span>
+</a>
+</a>
+</li>
+<li class=list-inline-item>|</li>
+<li class=list-inline-item>
+<span>20 July 2021</span>
+</li>
+</ul>
+</div>
+<div class="mb-5 text-center">
+<img loading=lazy class="img-fluid rounded" src=https://www.fidtenas.ga/images/post/2021-07-18-Bubela/foto.jpeg alt="Image not Found">
+</div>
+<div class=content>
+<p>Bubela is a stacked patch antenna characterised by its huge bandwidth and increased gain.</p>
+<p>This design started as a solution to a problem that alots of amateur radi operators specialised in microwave bands face every time they want to operate on 2,4GHz: due to the small bandwidth of most antennae designed for the QO-100 satellite, it is mandatory to have different dish feeders depending on whether you want to work the geostationary transponder or make some terrestrial QSOs at the lower part of the band. However, the decision of going for a stack patch instead of for a traditional one, brought some other interesting improvements over most of other commercially available antennae.</p>
+<h3 id=main-features>Main features</h3>
+<p>This antenna has been designed with the objective of improving some aspects of other antennas from the market while adding new useful features for the radio operator.</p>
+<ul>
+<li>
+<p><strong>Huge bandwidth:</strong> as it can be seen in the specifications below, this antenna not only provides a SWR of less than 1.3 accorss the whole 13cm band, that is can also be used as a receiving antenna for part of the 2,4GHz ISM band. No more changing the dish feed depending on whether you are working the QO-100 or making microwave QSOs!</p>
+</li>
+<li>
+<p><strong>Increased gain:</strong> the use of a second patch with a higher substrate height increases the directivity of the feed. This way, we approach even more to the theoretical optimal illumination of the reflector of -12dB at its edges.</p>
+</li>
+<li>
+<p><strong>Thought to be used with commercial satellite dishes:</strong> this design will offer the best performance with parabolic reflectors whose f/D ratio is 0,4 or lower, like the vast majority of commercially available options.</p>
+</li>
+<li>
+<p><strong>Cheap and easy to build:</strong> this antenna can be build at home using easy to find materials and tools. Moreover, the total cost of the materials is less than 25€</p>
+</li>
+<li>
+<p><strong>Optimal performance:</strong> Xurelo-6 covers the whole 6m band with a SWR lower than 1.5, offering good gain and low SLL across the whole band.</p>
+</li>
+</ul>
+<p><img src=../../images/post/2021-07-18-Bubela/model.png alt></p>
+<h3 id=antenna-specifications>Antenna Specifications</h3>
+<h4 id=50mhz--6m>50MHz / 6m</h4>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>Specification</strong></th>
+<th style=text-align:center><strong>Value</strong></th>
+<th style=text-align:center><strong>Units</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>Gain</td>
+<td style=text-align:center>9.56</td>
+<td style=text-align:center>dBi</td>
+</tr>
+<tr>
+<td style=text-align:center>3 dB Beamwidth (E plane)</td>
+<td style=text-align:center>58.9</td>
+<td style=text-align:center>º</td>
+</tr>
+<tr>
+<td style=text-align:center>3 dB Beamwidth (H plane)</td>
+<td style=text-align:center>58.0</td>
+<td style=text-align:center>º</td>
+</tr>
+<tr>
+<td style=text-align:center>Efficiency</td>
+<td style=text-align:center>99.0</td>
+<td style=text-align:center>%</td>
+</tr>
+<tr>
+<td style=text-align:center>Impedance</td>
+<td style=text-align:center>50</td>
+<td style=text-align:center>Ω</td>
+</tr>
+<tr>
+<td style=text-align:center>Lowest SWR</td>
+<td style=text-align:center>1.0</td>
+<td style=text-align:center>-</td>
+</tr>
+<tr>
+<td style=text-align:center>Bandwidth</td>
+<td style=text-align:center>250</td>
+<td style=text-align:center>MHz</td>
+</tr>
+<tr>
+<td style=text-align:center></td>
+<td style=text-align:center>11</td>
+<td style=text-align:center>%</td>
+</tr>
+<tr>
+<td style=text-align:center>SLL (E plane)</td>
+<td style=text-align:center>-18.2</td>
+<td style=text-align:center>dB</td>
+</tr>
+<tr>
+<td style=text-align:center>SLL (H plane)</td>
+<td style=text-align:center>-23.1</td>
+<td style=text-align:center>dB</td>
+</tr>
+<tr>
+<td style=text-align:center>Polarization</td>
+<td style=text-align:center>LHCP</td>
+<td style=text-align:center>-</td>
+</tr>
+<tr>
+<td style=text-align:center>XPD</td>
+<td style=text-align:center>15</td>
+<td style=text-align:center>dB</td>
+</tr>
+<tr>
+<td style=text-align:center>F/B</td>
+<td style=text-align:center>25.21</td>
+<td style=text-align:center>dB</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: bandwidth is measured between points at 1.5 SWR (very conesrvative measure). XPD is referred to broadside direction</em></p>
+<table>
+<thead>
+<tr>
+<th style=text-align:center>Simulated radiation pattern</th>
+<th style=text-align:center>Simulated SWR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center><img src=../../images/post/2021-07-18-Bubela/FF.png alt></td>
+<td style=text-align:center><img src=../../images/post/2021-07-18-Bubela/SWR.png alt></td>
+</tr>
+</tbody>
+</table>
+<p>3D radiation pattern</p>
+<p><img src=../../images/post/2021-07-18-Bubela/3D.png alt></p>
+<p>Modulus of the electric field (lower patch)</p>
+<p><img src=../../images/post/2021-07-18-Bubela/campo.gif alt></p>
+<p>Surface currents (lower patch)</p>
+<p><img src=../../images/post/2021-07-18-Bubela/corr.gif alt></p>
+<h3 id=bill-of-materials>Bill of materials</h3>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>Material</strong></th>
+<th style=text-align:center><strong>Quantity</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>100x100 copper sheets (up to 1mm height)</td>
+<td style=text-align:center>3</td>
+</tr>
+<tr>
+<td style=text-align:center>22mm copper pipe</td>
+<td style=text-align:center>1</td>
+</tr>
+<tr>
+<td style=text-align:center>50Ohm coaxial cable</td>
+<td style=text-align:center>20cm</td>
+</tr>
+<tr>
+<td style=text-align:center>SMA male connector</td>
+<td style=text-align:center>1</td>
+</tr>
+</tbody>
+</table>
+<p>* <em>Other conductive materials can be used intead of copper. However, copper is one of the easiest to solder at home, hence the decision to use it in our prototype.</em></p>
+<p>** <em>Make sure that you choose a coaxial cable whose performance at 2.4GHz is good enought as for not deteriorating the overall performance of the antenna.</em></p>
+<h3 id=assembly-instructions>Assembly instructions</h3>
+<blockquote>
+<p>All of the measurements, plans, .stl files and more can be found in our <a href=https://github.com/pepassaco/FIDtennas>GitHub repository</a></p>
+</blockquote>
+<ol>
+<li>
+<p>First of all, it is necessary to cut thethree copper sheets in the shape described in the plans. <strong>Important:</strong> in order to achieve the aforementioned specifications, it is necessary to cut the pieces with <strong>the maximum precision and accuracy possible</strong>, even submillimetric is that is an option to you. Using a CNC cut machine is highly recommended. Otherwise, the antenna will work fine, but its performance can decrease in some tenths of dB.</p>
+</li>
+<li>
+<p>Drill a small (~1mm) hole both on the ground plane and on the lower patch corresponding to the feeding point where the coaxial will be soldered.</p>
+</li>
+<li>
+<p>Draw some marks on the copper tubing corresponding to the pace every sheet will be soldered. Once again, it is crucial to be as precise as possible.</p>
+</li>
+<li>
+<p>Solder the ground plane and the first patch to the copper tube.</p>
+</li>
+<li>
+<p>Solder the coax to the corresponding pieces of copper (the shield to the ground plane and the inner conductor to the patch).</p>
+</li>
+</ol>
+<p><img src=../../images/post/2021-07-18-Bubela/foto2.jpeg alt></p>
+<ol start=6>
+<li>
+<p>Finally, solder the upper patch to the antenna</p>
+</li>
+<li>
+<p>Enjoy!</p>
+</li>
+</ol>
+<p><strong>Note:</strong> if you own a VNA that works up to 3GHz you may want to tune the patch. For this pupose, you can modify a bit (1mm or less) the distance between the different patchesaccross the tube. Nevertheless, due to the high bandwidth of the antenna, this is not a requirement at all (it will work fine without further tuning).</p>
+</div>
+</div>
+</div>
+<div class=single-post-meta>
+<div class="row justify-content-center">
+<div class="col-lg-5 col-md-6 text-center text-md-left">
+<ul class="post-meta-tags list-unstyled list-inline">
+<li class=list-inline-item><a href=https://www.fidtenas.ga/bands/2.4ghz>2.4GHz</a></li>
+</ul>
+</div>
+<div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+<ul class="social-links has-bg-color list-unstyled list-inline" style=line-height:0>
+<li class=list-inline-item>
+<a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-07-18-bubela%2f" target=_blank rel=noopener aria-label>
+<div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+<div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+<i class="lab la-facebook-f text-dark"></i>
+</div>
+</div>
+</a>
+</li>
+<li class=list-inline-item>
+<a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=Bubela%3a%20an%20advanced%20patch%20for%20the%2013cm%20band%20and%20QO-100&url=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-07-18-bubela%2f" target=_blank rel=noopener aria-label>
+<div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+<div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+<i class="lab la-twitter text-dark"></i>
+</div>
+</div>
+</a>
+</li>
+<li class=list-inline-item>
+<a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-07-18-bubela%2f" target=_blank rel=noopener aria-label>
+<div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+<div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+<i class="lab la-google-plus-g text-dark"></i>
+</div>
+</div>
+</a>
+</li>
+<li class=list-inline-item>
+<a class="resp-sharing-button__link d-block" href="mailto:?subject=Bubela%3a%20an%20advanced%20patch%20for%20the%2013cm%20band%20and%20QO-100&body=https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-07-18-bubela%2f" target=_self rel=noopener aria-label>
+<div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+<div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+<i class="las la-envelope text-dark"></i>
+</div>
+</div>
+</a>
+</li>
+<li class=list-inline-item>
+<a class="resp-sharing-button__link d-block" href="whatsapp://send?text=Bubela%3a%20an%20advanced%20patch%20for%20the%2013cm%20band%20and%20QO-100%20https%3a%2f%2fwww.fidtenas.ga%2fblog%2f2021-07-18-bubela%2f" target=_blank rel=noopener aria-label>
+<div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+<div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+<i class="lab la-whatsapp text-dark"></i>
+</div>
+</div>
+</a>
+</li>
+</ul></div>
+</div>
+</div>
+<div class=single-post-author>
+<div class="row justify-content-center">
+<div class=col-lg-10>
+<div class="media d-block d-sm-flex text-center text-sm-left">
+<a href=https://www.fidtenas.ga/author/ea1fid/><img loading=lazy class="img-fluid rounded-circle mr-0 mr-sm-4 mb-4" src=https://www.fidtenas.ga/images/author/ea1fid.jpg alt="Pablo EA1FID Álvarez"></a>
+<div class=media-body>
+<p class="font-primary mb-1">Written By</p>
+<h4><a href=https://www.fidtenas.ga/author/ea1fid/ class="text-dark font-weight-700">Pablo EA1FID Álvarez</a></h4>
+<p class=font-primary>Telecommunications engineer by the Universidad Politécnica de Madrid and Ham Radio operator (callsign EA1FID) since an early age. Large experience in antenna design thanks to his job at the Microwaves and Radar Group of the Signals, Systems and …</p>
+<ul class="social-links list-unstyled list-inline ml-0 ml-sm-n2">
+<li class=list-inline-item><a href=https://twitter.com/ea1fid>
+<i class="lab la-twitter"></i>
+</a></li>
+<li class=list-inline-item><a href=https://es.linkedin.com/in/p-adominguez>
+<i class="lab la-linkedin-in"></i>
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=single-post-similer>
+<div class="row justify-content-center">
+<div class=col-lg-10>
+<div class="row mt-3">
+<div class=col-12>
+<h3 class="text-dark font-weight-800 mb-4 pb-2">You May Also Like</h3>
+</div>
+<div class=col-md-6>
+<article class="card post-card">
+<a href=https://www.fidtenas.ga/blog/2021-08-08-aiga/>
+<img loading=lazy class="w-100 rounded" src=https://www.fidtenas.ga/images/post/2021-08-08-Aiga/about.jpg alt="Project Aiga: a portable VHF/UHF antenna optimised for satellite work">
+</a>
+<div class=card-body>
+<ul class="card-meta list-inline mb-2">
+<li class="list-inline-item mb-2">
+<a href=https://www.fidtenas.ga/author/ea1fid/ class=card-meta-author>
+<img loading=lazy src=https://www.fidtenas.ga/images/author/ea1fid.jpg alt="Pablo EA1FID Álvarez">
+<span>Pablo EA1FID Álvarez</span>
+</a>
+</li>
+<li class="list-inline-item mb-2">
+<span>27 Jul, 2021</span>
+</li>
+<li class="list-inline-item mb-2">
+<ul class="card-meta-tag list-inline">
+</ul>
+</li>
+</ul>
+<h3 class=mb-3>
+<a class=post-title href=https://www.fidtenas.ga/blog/2021-08-08-aiga/>Project Aiga: a portable VHF/UHF antenna optimised for satellite work</a>
+</h3>
+<p>Today, we are glad to present you a very special antenna: Aiga.
+Aiga is a double band VHF/UHF antenna designed for portable use. In this way, it uses …</p>
+</div>
+</article>
+</div>
+<div class=col-md-6>
+<article class="card post-card">
+<a href=https://www.fidtenas.ga/blog/2021-07-30-xurelo-6/>
+<img loading=lazy class="w-100 rounded" src=https://www.fidtenas.ga/images/post/2021-07-30-Xurelo-6/model.png alt="Xurelo-6: an easy and portable alternative for working the 50MHz / 6m band">
+</a>
+<div class=card-body>
+<ul class="card-meta list-inline mb-2">
+<li class="list-inline-item mb-2">
+<a href=https://www.fidtenas.ga/author/ea1fid/ class=card-meta-author>
+<img loading=lazy src=https://www.fidtenas.ga/images/author/ea1fid.jpg alt="Pablo EA1FID Álvarez">
+<span>Pablo EA1FID Álvarez</span>
+</a>
+</li>
+<li class="list-inline-item mb-2">
+<span>20 Jul, 2021</span>
+</li>
+<li class="list-inline-item mb-2">
+<ul class="card-meta-tag list-inline">
+</ul>
+</li>
+</ul>
+<h3 class=mb-3>
+<a class=post-title href=https://www.fidtenas.ga/blog/2021-07-30-xurelo-6/>Xurelo-6: an easy and portable alternative for working the 50MHz / 6m band</a>
+</h3>
+<p>The successor of the Xurelo-4 is here! This time, we are bringing a new antenna for the 6m band: Xurelo-6.
+The Meteor Scatter season is coming to its …</p>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class=section-sm>
+<div class=container>
+<div class="row justify-content-center align-items-center">
+<div class=col-lg-5>
+</div>
+<div class="col-lg-12 text-center mt-5">
+<ul class="list-inline footer-menu mb-4">
+<li class="list-inline-item mx-3"><a href=https://www.fidtenas.ga/about/>FIDtenas</a></li>
+<li class="list-inline-item mx-3"><a href=https://www.fidtenas.ga/author/>Author</a></li>
+<li class="list-inline-item mx-3"><a href=https://www.fidtenas.ga/contact>Contact</a></li>
+</ul>
+<ul class="social-links icon-box list-unstyled list-inline font-weight-500 mb-3">
+<li class="list-inline-item text-center"><a href=https://www.facebook.com/fidtenas aria-label=social-icon>
+<i class="lab lab la-facebook-f"></i>
+</a></li>
+<li class="list-inline-item text-center"><a href=https://www.twitter.com/fidtenas aria-label=social-icon>
+<i class="lab lab la-twitter"></i>
+</a></li>
+<li class="list-inline-item text-center"><a href=https://es.linkedin.com/in/p-adominguez aria-label=social-icon>
+<i class="lab lab la-linkedin-in"></i>
+</a></li>
+<li class="list-inline-item text-center"><a href=https://github.com/pepassaco/FIDtennas aria-label=social-icon>
+<i class="lab lab la-github"></i>
+</a></li>
+</ul>
+<p class="mb-0 font-weight-500 copyright-text content">Designs and development by Pablo EA1FID</p>
+</div>
+</div>
+</div>
+</footer>
+<script data-turbolinks-suppress-warning src=/js/vendor.min.104c16bb588dd60f4bc0cbb9828dcf214eb0a6775f69f74f025b75dc5aac73eb47da26aef00c8f4e3d7a85099a8054c195d03d63aa88d1b4213a47274755994e.js integrity="sha512-EEwWu1iN1g9LwMu5go3PIU6wpndfafdPAlt13Fqsc+tH2iau8AyPTj16hQmagFTBldA9Y6qI0bQhOkcnR1WZTg=="></script>
+</body>
+</html>
