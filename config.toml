@@ -181,13 +181,19 @@ hasChildren = true
   parent = "About"
   weight = 2
   url = "author/"
-  name = "Author"
+  name = "Author"  
   
   [[menu.main]]
   parent = "About"
   weight = 3
   url = "contact"
   name = "Contact"
+  
+  [[menu.main]]
+  parent = "About"
+  weight = 4
+  url = "support/"
+  name = "Support this project"
   
   
   
@@ -203,11 +209,7 @@ hasChildren = true
 #  url = "privacy/"
 #  name = "Privacy"
   
-#  [[menu.main]]
-#  parent = "Pages"
-#  weight = 6
-#  url = "terms-conditions/"
-#  name = "Terms & Conditions"
+
 
 ############################# Footer Menu ########################
 [[menu.footer]]
@@ -224,6 +226,11 @@ name = "Author"
 weight = 3
 url = "contact"
 name = "Contact"
+
+[[menu.footer]]
+weight = 4
+url = "support/"
+name = "Support this project"
 
 #[[menu.footer]]
 #weight = 3
