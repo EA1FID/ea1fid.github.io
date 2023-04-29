@@ -85,7 +85,7 @@ color_primary = "#01AD9F"
 #################### default parameters ################################
 [params]
 logo = "images/logo_v4.3.png"
-logo_height = "20px"
+logo_width = "300px"
 favicon = "images/favicon.png"
 # Meta data
 description = "This is meta description"
@@ -97,7 +97,7 @@ search = true
 # main section
 mainSections = ["blog"]
 # copyright
-copyright = "Designs and development by Pablo EA1FID"
+copyright = "Designs and images are copyrrighted by Pablo EA1FID"
 
 # Preloader
 [params.preloader]
@@ -112,7 +112,7 @@ access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1Nmpx
 
 # Subscription
 [params.subscription]
-enable = true
+enable = false
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
@@ -126,79 +126,87 @@ expire_days = 2
 
 
 ############################# Main Menu ########################
+
+#[[menu.main]]
+#weight = 1
+#url = "/"
+#name = "Home"
+
 [[menu.main]]
 weight = 1
-url = "/"
-name = "Home"
+url = "quantum"
+name = "Quantum Amateur Radio"
 
 
 [[menu.main]]
 weight = 2
 url = "#"
-name = "Designs"
+name = "FIDtennas"
 hasChildren = true
 
   [[menu.main]]
-  parent = "Designs"
+  parent = "FIDtennas"
   weight = 1
   url = "/"
   name = "All"
     
   [[menu.main]]
-  parent = "Designs"
+  parent = "FIDtennas"
   weight = 2
   url = "bands/"
-  name = "Frequency bands"
+  name = "By frequency band"
   
   [[menu.main]]
-  parent = "Designs"
+  parent = "FIDtennas"
   weight = 3
   url = "models/"
-  name = "Antenna models"
+  name = "By type"
   
   [[menu.main]]
-  parent = "Designs"
+  parent = "FIDtennas"
   weight = 4
   url = "categories/"
-  name = "Categories"
-
-
+  name = "By use"
+  
 
 [[menu.main]]
 weight = 3
-url = "about"
-name = "About"
-  
-
-[[menu.main]]
-weight = 4
 url = "#"
-name = "About"
+name = "EA1FID"
 hasChildren = true
 
   [[menu.main]]
-  parent = "About"
+  parent = "EA1FID"
   weight = 1
   url = "about"
-  name = "FIDtenas"
+  name = "About FIDtenas"
   
   [[menu.main]]
-  parent = "About"
+  parent = "EA1FID"
   weight = 2
   url = "author/"
-  name = "Author"  
+  name = "About me"  
   
   [[menu.main]]
-  parent = "About"
+  parent = "EA1FID"
   weight = 3
   url = "contact"
   name = "Contact"
   
   [[menu.main]]
-  parent = "About"
+  parent = "EA1FID"
   weight = 4
   url = "support/"
-  name = "Support this project"
+  name = "Support me"
+
+
+#[[menu.main]]
+#weight = 4
+#url = "about"
+#name = "About"
+
+
+
 
 
 
@@ -235,12 +243,13 @@ name = "Support this project"
 #name = "Terms & Conditions"
 
 # Social Icons
-[[params.social]]
-url = "https://www.facebook.com/fidtenas"
-icon = "lab la-facebook-f" # https://icons8.com/line-awesome
+
+#[[params.social]]
+#url = "https://www.facebook.com/fidtenas"
+#icon = "lab la-facebook-f" # https://icons8.com/line-awesome
 
 [[params.social]]
-url = "https://www.twitter.com/fidtenas"
+url = "https://www.twitter.com/ea1fid"
 icon = "lab la-twitter" # https://icons8.com/line-awesome
 
 #[[params.social]]

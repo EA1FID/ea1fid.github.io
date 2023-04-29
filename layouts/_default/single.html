@@ -1,7 +1,7 @@
 {{ define "main"}}
 
 <!-- checking blog -->
-{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
+{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "models") (eq .Section "bands") (eq .Section "categories") (eq .Section "tags") }}
 
 <section class="section-sm">
   <div class="container">
@@ -47,8 +47,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-5 col-md-6 text-center text-md-left">
           <ul class="post-meta-tags list-unstyled list-inline">
-            {{range .Params.tags}}
-            <li class="list-inline-item"><a href="{{`tags` | absURL}}/{{.| urlize}}">{{.}}</a></li>
+            {{range .Params.bands}}
+            <li class="list-inline-item"><a href="{{`bands` | absURL}}/{{.| urlize}}">{{.}}</a></li>
             {{end}}
           </ul>
         </div>

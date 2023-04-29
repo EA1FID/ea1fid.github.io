@@ -7,6 +7,6 @@
 {{ $image:= $.Scratch.Get "image" }}
 
 {{ $date:= .PublishDate.Format "02 Jan, 2006"}}
-{{- $.Scratch.Add "index" (dict "title" .Title "date" $date "tags" .Params.tags "image" $image "categories" .Params.categories "contents" .Plain "permalink" .Permalink) -}}
+{{- $.Scratch.Add "index" (dict "title" .Title "date" $date "tags" .Params.tags "image" $image "categories" .Params.categories "bands" .Params.bands "models" .Params.models "contents" .Plain "permalink" .Permalink) -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | jsonify -}}
