@@ -19,20 +19,6 @@
         </li>
         {{ end }}
         {{ end }}
-        {{ if eq .Permalink (`bands/` | absURL)}}
-        {{ range .Site.Taxonomies.bands }}
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="{{ .Page.Permalink }}"><i class="las la-tags mr-1"></i> {{ .Page.Title }} ({{ .Count }})</a>
-        </li>
-        {{ end }}
-        {{ end }}
-        {{ if eq .Permalink (`models/` | absURL)}}
-        {{ range .Site.Taxonomies.models }}
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="{{ .Page.Permalink }}"><i class="las la-tags mr-1"></i> {{ .Page.Title }} ({{ .Count }})</a>
-        </li>
-        {{ end }}
-        {{ end }}
         </ul>
       </div>
     </div>

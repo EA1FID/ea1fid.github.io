@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://ea1fid.github.io/"
 title = "FIDtenas | Open-source RF hardware for Amateur Radio"
-theme = "bookworm"
+theme = "bookworm-light"
 # post pagination
 paginate = "5"
 # post excerpt
@@ -15,16 +15,21 @@ disqusShortname = "themefisher-template" # get your shortname form here : https:
 ############################# A ver ################################
 
 [taxonomies]
-  category = "categories"
+category = "categories"
   tag = "tags"
   band = "bands"
   model = "models"
-  
-  
+
+
+
 ############################# Modules ##############################
 [module.hugoVersion]
 extended = true
-min = "0.80.0"
+min = "0.87.0"
+
+############################# Image Processing ##############################
+[imaging]
+quality = "95"
 
 ############################# Outputs ##############################
 [outputs]
@@ -75,16 +80,16 @@ black = "#000000"
 dark = "#152035"
 gray = "#747577"
 light = "#FAFAFA"
-color_primary = "#217FB0" #"#01AD9F"
+color_primary = "#01AD9F"
 
 #################### default parameters ################################
 [params]
 logo = "images/logo_v4.3.png"
-logo_height = "90px"
-favicon = "images/favicon.ico"
+logo_height = "20px"
+favicon = "images/favicon.png"
 # Meta data
 description = "This is meta description"
-author = "Themefisher"
+author = "Pablo EA1FID"
 # contact form action
 contact_form_action = "https://formspree.io/f/xzbyjbkl" # contact form works with https://formspree.io
 # search
@@ -107,7 +112,7 @@ access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1Nmpx
 
 # Subscription
 [params.subscription]
-enable = false
+enable = true
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
@@ -156,9 +161,9 @@ hasChildren = true
   weight = 4
   url = "categories/"
   name = "Categories"
-  
-  
-  
+
+
+
 [[menu.main]]
 weight = 3
 url = "about"
@@ -194,21 +199,8 @@ hasChildren = true
   weight = 4
   url = "support/"
   name = "Support this project"
-  
-  
-  
-#  [[menu.main]]
-#  parent = "Pages"
-#  weight = 4
-#  url = "elements/"
-#  name = "Elements"
-  
-#  [[menu.main]]
-#  parent = "Pages"
-#  weight = 5
-#  url = "privacy/"
-#  name = "Privacy"
-  
+
+
 
 
 ############################# Footer Menu ########################
