@@ -186,18 +186,24 @@ hasChildren = true
   weight = 2
   url = "author/"
   name = "About me"  
-  
+
   [[menu.main]]
   parent = "EA1FID"
   weight = 3
+  url = "https://www.qrz.com/db/EA1FID"
+  name = "QRZ"
+  
+  [[menu.main]]
+  parent = "EA1FID"
+  weight = 4
   url = "contact"
   name = "Contact"
   
   [[menu.main]]
   parent = "EA1FID"
-  weight = 4
+  weight = 5
   url = "support/"
-  name = "Support me"
+  name = "Contribute"
 
 
 #[[menu.main]]

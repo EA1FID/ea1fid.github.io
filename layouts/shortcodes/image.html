@@ -10,7 +10,7 @@
 {{ $command:= .Get "command" | humanize }}
 {{ $option:= .Get "option" }}
 
-<!-- image position -->
+<!-- image position 
 {{ if eq $position `center` }}
 {{ .Scratch.Set "position" "img-center" }}
 {{ else if eq $position `left` }}
@@ -21,7 +21,12 @@
 {{ .Scratch.Set "position" "img-float-left" }}
 {{ else if eq $position `float-right` }}
 {{ .Scratch.Set "position" "img-float-right" }}
+
+
 {{ end }}
+
+-->
+{{ .Scratch.Set "position" "img-center" }}
 
 <!-- check cdn image -->
 {{ if or (hasPrefix $imagePath "http") (fileExists (add `static/` $imagePath)) }}

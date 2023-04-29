@@ -7,11 +7,19 @@ draft: false
 
 #### How to help
 
-Since we have no incomes, it sometimes feels difficult to find the necessary time and financing for the design processes. However, we included a donation system so that, in case you like this project and want to support it, you can do it in an easy way. Helping by **buying a simple coffee** may seem insignificant, but it really helps our page grow!
+Since this is a non-profit project, it is sometimes difficult to find the necessary spare time and funding to carry out the development processes. However, I have recently included a donation system so that, in case you like what I do and you want to support it, you can do it in an easy way. 
 
-If you cant to collaborate with us, we have a [Patreon page](https://www.patreon.com/ea1fid)!
+**Buying a coffee** may seem insignificant, but it really helps this grow!
 
-<a href="https://www.patreon.com/ea1fid" rel="Patreon">![Foo](../images/patreon.jpg)</a>
+Take a look at the [Patreon page](https://www.patreon.com/ea1fid)!
+
+
+
+<a href="https://www.patreon.com/ea1fid" rel="Patreon">{{< image src="images/patreon.jpg" alt="Patreon" command="fill" option="q95" class="img-fluid" title="Patreon" >}}</a>
+
+
+<!--
+<a href="https://www.patreon.com/ea1fid" rel="Patreon">![Foo](images/patreon.jpg)</a>
 
 
 #### Our mission
@@ -28,6 +36,4 @@ We also implement the **open-source philosophy**: we freely share our knowledge 
 #### Our project
 
 **There is no perfect antenna.** It is not possible to achieve maximal specifications for both bandwidth, gain, SLL, SWR, F/B, etc. at the same time, and we know that. Unlike most of antenna sellers, which tend to either **hide the specifications** that are not convenient for them or presenting diagrams with the axis adjusted so that the **antenna seems better** than what it actually is, we simply present all of the specifications and diagrams **as they really are**. We admit that every antenna will have its downsides, but we design them so that they are negligible for the specific application the antenna is going to be used for. For example, for a low-noise antenna, we will optimise the SLL, while this parameter will not be a priority in antenna diesigned for portable use. This is how antenna design works and we do not hide it!
-
-
-
+-->

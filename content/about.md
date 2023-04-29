@@ -41,9 +41,11 @@ what_i_do:
  
 ---
 
-From FIDtenas, we seek to develop RF hardware using the most advanced state-of-the-art techniques to freely offer updated and optimized designs to radio amateurs and radio communications enthusiasts.
+FIDtenas was born as an open source project with a very clear objective: to bring state-of-the-art solutions within the reach of any radio amateur. 
 
-It is not the same to design an antenna for a fixed point-to-point link than to exploit propagation modes such as satellite, meteor scattering or aurora. Our experience in the amateur radio world enables us to optimize the specifications of our systems to those most needed by radio amateurs, in order to provide them with optimum performance in their final application. FOr more information about how we work, visit the [Support this project](https://www.fidtenas.ga/support/) page.
+We are aware that that not everyone has the knowledge or the resources for designing and optimizing RF and microwave equipment. That is why at FIDtenas we are committed to perform the required technical tasks (calculations, simulations, measurements...) to achieve the best results without you having to do it, sharing the final results in an open-source fashion so that anyone can build the resulting hardware.
+
+Our experience in the amateur radio world allows us to optimize the specifications of our systems to those required by amateur operators. For more information about how we work, visit the [Support this project](https://www.fidtenas.ga/support/) page.
 
 
 

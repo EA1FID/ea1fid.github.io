@@ -12,6 +12,12 @@ social:
   link: "https://es.linkedin.com/in/p-adominguez"
 ---
 
-Telecommunications engineer by the Universidad Politécnica de Madrid and Ham Radio operator (callsign EA1FID) since an early age. Large experience in antenna design thanks to his job at the Microwaves and Radar Group of the Signals, Systems and Radiocommunications Deppartment of this university. 
+Quantum Engineer by the Eidgenössische Technische Hochschule Zürich (ETH), Telecommunications Engineer by the Universidad Politécnica de Madrid (UPM) and Amateur Radio operator (callsign EA1FID) from a young age. 
 
-As a Ham Radio operator, he emphasizes his love for experimentation, both in trying all different forms of propagation (satellite, tropo, meteor scatter, microwaves...) and in applying modern state-of-the-art techniques to Amateur Radio.
+I have extensive experience in microwave engineering and antenna design (thanks to my former job at the Microwaves and Radar Group of the Signals, Systems and Radiocommunications Deppartment of UPM) as well as in quantum devices, quantum communications and quantum information theory (thanks to the knowledge acquired during my time at ETH).
+
+As an Amateur Radio operator, I would highlight my love for experimentation in all of its forms: from trying all different forms of propagation (satellite, tropo, meteor scatter, microwaves...) to bringing modern state-of-the-art techniques to Amateur Radio. 
+
+I am really concerned with the future of our precious hobby, which leads me to be quite an active person when it comes to exploiting the most social-related facet of Amateur Radio. 
+
+In my free time, I really enjoy promoting the radio among young people, experimenting and trying to incorporate new technologies for amateur use (amateur radio should not to fall behind novel technologie sin this digital era!), and giving educational conferences.

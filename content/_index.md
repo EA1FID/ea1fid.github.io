@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-description: "Open-source antenna designs for everyone!"
+description: "EA1FID's website on experimental amateur radio"
 draft: false
 ---
 
