@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://ea1fid.github.io/"
+baseURL = "https://ea1fid.com/"
 title = "FIDtenas | Open-source RF hardware for Amateur Radio"
 theme = "bookworm-light"
 # post pagination
@@ -84,8 +84,8 @@ color_primary = "#01AD9F"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo_v4.3.png"
-logo_width = "300px"
+logo = "images/logo_v5.png"
+logo_width = "100px"
 favicon = "images/favicon.png"
 # Meta data
 description = "This is meta description"
@@ -144,29 +144,29 @@ name = "  "
 [[menu.main]]
 weight = 3
 url = "#"
-name = "FIDtennas"
+name = "Blog"
 hasChildren = true
 
   [[menu.main]]
-  parent = "FIDtennas"
+  parent = "Blog"
   weight = 1
   url = "/"
-  name = "All"
+  name = "All entries"
     
   [[menu.main]]
-  parent = "FIDtennas"
+  parent = "Blog"
   weight = 2
   url = "bands/"
-  name = "By frequency band"
+  name = "By frequency"
   
   [[menu.main]]
-  parent = "FIDtennas"
+  parent = "Blog"
   weight = 3
   url = "models/"
   name = "By type"
   
   [[menu.main]]
-  parent = "FIDtennas"
+  parent = "Blog"
   weight = 4
   url = "categories/"
   name = "By use"

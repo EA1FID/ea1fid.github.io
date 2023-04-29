@@ -14,6 +14,10 @@ caption:
 
 ### Stay tuned!
 
+<br>
+<br>
+{{< image src="images/logo_v5.png" alt="Logo EA1FID" command="fill" option="q95" class="img-fluid" title="Patreon" >}}
+
 <!---
 
 title: "Ham Radio is about to change..."

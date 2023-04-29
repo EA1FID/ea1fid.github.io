@@ -26,3 +26,8 @@ As an Amateur Radio operator, I would highlight my love for experimentation in a
 I am really concerned with the future of our precious hobby, which leads me to be quite an active person when it comes to exploiting the most social-related facet of Amateur Radio. 
 
 In my free time, I really enjoy promoting the radio among young people, experimenting and trying to incorporate new technologies for amateur use (amateur radio should not to fall behind novel technologie sin this digital era!), and giving educational conferences.
+
+
+<br>
+<br>
+{{< image src="images/logo_v5.png" alt="Logo EA1FID" command="fill" option="q95" class="img-fluid" title="Patreon" >}}
