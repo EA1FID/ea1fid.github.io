@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = ""
+baseURL = "https://ea1fid.github.io/"
 title = "FIDtenas | Open-source RF hardware for Amateur Radio"
 theme = "bookworm"
 # post pagination
