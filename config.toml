@@ -134,12 +134,15 @@ expire_days = 2
 
 [[menu.main]]
 weight = 1
-url = "quantum"
-name = "Quantum Amateur Radio"
-
+url = "august23"
+name = "?"
 
 [[menu.main]]
 weight = 2
+name = "  "
+
+[[menu.main]]
+weight = 3
 url = "#"
 name = "FIDtennas"
 hasChildren = true
@@ -168,9 +171,12 @@ hasChildren = true
   url = "categories/"
   name = "By use"
   
+[[menu.main]]
+weight = 4
+name = " "
 
 [[menu.main]]
-weight = 3
+weight = 5
 url = "#"
 name = "EA1FID"
 hasChildren = true
@@ -221,12 +227,12 @@ hasChildren = true
 [[menu.footer]]
 weight = 1
 url = "about/"
-name = "FIDtenas"
+name = "About FIDtenas"
 
 [[menu.footer]]
 weight = 2
-url = "author/"
-name = "Author"
+url = "author/ea1fid/"
+name = "About EA1FID"
 
 [[menu.footer]]
 weight = 3
@@ -259,8 +265,12 @@ url = "https://www.twitter.com/ea1fid"
 icon = "lab la-twitter" # https://icons8.com/line-awesome
 
 #[[params.social]]
-#url = "https://www.instagram.com/"
-#icon = "lab la-instagram" # https://icons8.com/line-awesome
+#url = "https://www.qrz.com/db/EA1FID"
+#icon = "las la-satellite-dish" # https://icons8.com/line-awesome
+
+[[params.social]]
+url = "https://www.qrz.com/db/EA1FID"
+icon = "las la-broadcast-tower" # https://icons8.com/line-awesome
 
 [[params.social]]
 url = "https://es.linkedin.com/in/p-adominguez"

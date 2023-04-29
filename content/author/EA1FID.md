@@ -8,8 +8,13 @@ social:
 
 - icon: "la-twitter"
   link: "https://twitter.com/ea1fid"
+- icon: "las la-broadcast-tower"
+  link: "https://www.qrz.com/db/EA1FID"
 - icon: "la-linkedin-in"
   link: "https://es.linkedin.com/in/p-adominguez"
+- icon: "lab la-github"
+  link: "https://github.com/pepassaco/FIDtennas"
+
 ---
 
 Quantum Engineer by the Eidgenössische Technische Hochschule Zürich (ETH), Telecommunications Engineer by the Universidad Politécnica de Madrid (UPM) and Amateur Radio operator (callsign EA1FID) from a young age. 
