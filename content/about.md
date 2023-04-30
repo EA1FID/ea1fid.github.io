@@ -51,4 +51,4 @@ Our experience in the amateur radio world allows us to optimize the specificatio
 
 <br>
 <br>
-{{< image src="images/logo_v5_long.png" alt="Logo EA1FID" command="fill" option="q95" class="img-fluid" title="Patreon" >}}
+{{< image src="images/logoFinal.png" alt="Logo EA1FID" command="fill" option="q95" class="img-fluid" title="Patreon" >}}

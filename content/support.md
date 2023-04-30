@@ -18,7 +18,7 @@ Take a look at the [Patreon page](https://www.patreon.com/ea1fid)!
 <a href="https://www.patreon.com/ea1fid" rel="Patreon">{{< image src="images/patreon.jpg" alt="Patreon" command="fill" option="q95" class="img-fluid" title="Patreon" >}}</a>
 
 
-{{< image src="images/logo_v5_long.png" alt="Logo EA1FID" command="fill" option="q95" class="img-fluid" title="Patreon" >}}
+{{< image src="images/logoFinal.png" alt="Logo EA1FID" command="fill" option="q95" class="img-fluid" title="Patreon" >}}
 </div>
 
 
