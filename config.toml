@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://ea1fid.com/"
-title = "FIDtenas | Open-source RF hardware for Amateur Radio"
+title = "EA1FID's website on experimental amateur radio"
 theme = "bookworm-light"
 # post pagination
 paginate = "5"
@@ -16,9 +16,9 @@ disqusShortname = "themefisher-template" # get your shortname form here : https:
 
 [taxonomies]
 category = "categories"
-  tag = "tags"
-  band = "bands"
-  model = "models"
+tag = "tags"
+antenna = "antennas"
+model = "models"
 
 
 
@@ -144,32 +144,32 @@ name = "  "
 [[menu.main]]
 weight = 3
 url = "#"
-name = "Blog"
+name = "Posts"
 hasChildren = true
 
   [[menu.main]]
-  parent = "Blog"
+  parent = "Posts"
   weight = 1
   url = "/"
   name = "All entries"
     
   [[menu.main]]
-  parent = "Blog"
+  parent = "Posts"
   weight = 2
-  url = "bands/"
-  name = "By frequency"
+  url = "antennas/"
+  name = "FIDtennas"
   
-  [[menu.main]]
-  parent = "Blog"
-  weight = 3
-  url = "models/"
-  name = "By type"
+  #[[menu.main]]
+  #parent = "Posts"
+  #weight = 3
+  #url = "models/"
+  #name = "By type"
   
-  [[menu.main]]
-  parent = "Blog"
-  weight = 4
-  url = "categories/"
-  name = "By use"
+  #[[menu.main]]
+  #parent = "Posts"
+  #weight = 4
+  #url = "categories/"
+  #name = "By use"
   
 [[menu.main]]
 weight = 4

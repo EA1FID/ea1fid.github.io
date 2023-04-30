@@ -1,7 +1,7 @@
 {{ define "main"}}
 
 <!-- checking blog -->
-{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "models") (eq .Section "bands") (eq .Section "categories") (eq .Section "tags") }}
+{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "models") (eq .Section "antennas") (eq .Section "categories") (eq .Section "tags") }}
 
 <section class="section-sm">
   <div class="container">
@@ -43,12 +43,15 @@
       </div>
     </div>
 
+
+  
+
     <div class="single-post-meta">
       <div class="row justify-content-center">
         <div class="col-lg-5 col-md-6 text-center text-md-left">
           <ul class="post-meta-tags list-unstyled list-inline">
-            {{range .Params.bands}}
-            <li class="list-inline-item"><a href="{{`bands` | absURL}}/{{.| urlize}}">{{.}}</a></li>
+            {{range .Params.antennas}}
+            <li class="list-inline-item"><a href="{{`antennas` | absURL}}/{{.| urlize}}">{{.}}</a></li>
             {{end}}
           </ul>
         </div>
@@ -57,6 +60,7 @@
         </div>
       </div>
     </div>
+
 
     {{ if .Params.Author }}
       <div class="single-post-author">
@@ -85,6 +89,22 @@
         </div>
       </div>
     {{ end }}
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <div class="row justify-content-center">
+      {{ partial "image.html" (dict "Src" "images/logo_v5.png"  "Class" "img-fluid" "Alt" "EA1FID logo") }}
+    </div>
+
+
+
+    
 
     {{ $related := (where site.RegularPages "Section" "blog") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
     {{ if $related }}

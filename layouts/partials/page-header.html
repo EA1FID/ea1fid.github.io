@@ -3,11 +3,21 @@
     <div class="row">
       <div class="col-8 mx-auto text-center">
 
-        {{ if or (eq .Section "tags") (eq .Section "categories") }}
-        {{ if or (eq .Permalink (`tags/` | absURL)) (eq .Permalink (`categories/` | absURL)) }}
+        
+
+        {{ if or (eq .Section "tags") (eq .Section "categories") (eq .Section "antennas") (eq .Section "models")}}
+
+        {{ if or (eq .Permalink (`tags/` | absURL)) (eq .Permalink (`categories/` | absURL))  (eq .Permalink (`models/` | absURL))}}
+        
         <h3 class="mb-3 text-dark font-weight-bold">{{.Title | markdownify}}</h3>
+
         {{else}}
-        <h4 class="mb-3 text-dark font-weight-bold">Showing posts from <mark>{{.Title | markdownify}}</mark></h4>
+
+        {{ if or (eq .Permalink (`antennas/` | absURL))}}
+        <h4 class="mb-3 text-dark font-weight-bold"><mark>FIDtennas</mark> sorted by frequency band</h4>
+        {{else}}
+        <h4 class="mb-3 text-dark font-weight-bold">FIDtennas for <mark>{{.Title | markdownify}}</mark></h4>
+        {{ end }}
         {{ end }}
         {{ else }}
         <h3 class="mb-3 text-dark font-weight-bold">{{.Title | markdownify}}</h3>

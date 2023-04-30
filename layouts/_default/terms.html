@@ -19,8 +19,8 @@
         </li>
         {{ end }}
         {{ end }}
-        {{ if eq .Permalink (`bands/` | absURL)}}
-        {{ range .Site.Taxonomies.bands }}
+        {{ if eq .Permalink (`antennas/` | absURL)}}
+        {{ range .Site.Taxonomies.antennas }}
         <li class="list-inline-item mb-1">
           <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="{{ .Page.Permalink }}"><i class="las la-tags mr-1"></i> {{ .Page.Title }} ({{ .Count }})</a>
         </li>

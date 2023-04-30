@@ -14,12 +14,16 @@ Since this is a non-profit project, it is sometimes difficult to find the necess
 Take a look at the [Patreon page](https://www.patreon.com/ea1fid)!
 
 
-
+<div class="row justify-content-center">
 <a href="https://www.patreon.com/ea1fid" rel="Patreon">{{< image src="images/patreon.jpg" alt="Patreon" command="fill" option="q95" class="img-fluid" title="Patreon" >}}</a>
 
-<br>
-<br>
+
 {{< image src="images/logo_v5.png" alt="Logo EA1FID" command="fill" option="q95" class="img-fluid" title="Patreon" >}}
+</div>
+
+
+
+
 
 <!--
 <a href="https://www.patreon.com/ea1fid" rel="Patreon">![Foo](images/patreon.jpg)</a>
