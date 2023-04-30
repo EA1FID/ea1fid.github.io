@@ -30,4 +30,4 @@ In my free time, I really enjoy promoting the radio among young people, experime
 
 <br>
 <br>
-{{< image src="images/logo_v5.png" alt="Logo EA1FID" command="fill" option="q95" class="img-fluid" title="Patreon" >}}
+{{< image src="images/logo_v5_long.png" alt="Logo EA1FID" command="fill" option="q95" class="img-fluid" title="Patreon" >}}

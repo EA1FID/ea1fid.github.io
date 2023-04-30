@@ -178,35 +178,35 @@ name = " "
 [[menu.main]]
 weight = 5
 url = "#"
-name = "EA1FID"
+name = "About"
 hasChildren = true
 
   [[menu.main]]
-  parent = "EA1FID"
+  parent = "About"
   weight = 1
   url = "about"
-  name = "About FIDtenas"
+  name = "FIDtenas"
   
   [[menu.main]]
-  parent = "EA1FID"
+  parent = "About"
   weight = 2
   url = "author/"
-  name = "About me"  
+  name = "EA1FID"  
 
   [[menu.main]]
-  parent = "EA1FID"
+  parent = "About"
   weight = 3
   url = "https://www.qrz.com/db/EA1FID"
   name = "QRZ"
   
   [[menu.main]]
-  parent = "EA1FID"
+  parent = "About"
   weight = 4
   url = "contact"
   name = "Contact"
   
   [[menu.main]]
-  parent = "EA1FID"
+  parent = "About"
   weight = 5
   url = "support/"
   name = "Contribute"
