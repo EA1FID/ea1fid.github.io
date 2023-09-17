@@ -1,5 +1,5 @@
 ---
-title: "EA1FID's page about Quantum Amateur Radio"
+title: "QAR"
 layout: "about"
 image: "images/qar.jpg"
 draft: false
@@ -7,11 +7,15 @@ draft: false
 #caption
 caption: 
   enable: true
-  title: "QAR"
+  title: "EA1FID's page about Quantum Amateur Radio"
 ---
 
+*This webpage intends to be a reference for operators interested in quantum amateur radio, providing both educational content as well as theoretical results and the latests news about advancements or experiments in this field.* 
 
 
+Work in progress.
+
+<!---
 ### Building the foundations of Quantum Amateur Radio
 
 Work in progress.
@@ -19,7 +23,7 @@ Work in progress.
 ### Towards the first qQSO
 
 Work in progress.
-
+-->
 
 
 <!---
