@@ -89,7 +89,7 @@ logo_width = "100px"
 logo_height = "20px"
 favicon = "images/favicon.png"
 # Meta data
-description = "This is meta description"
+description = "EA1FID's website on Amateur Radio: antenna, conferences, quantum tech and more!"
 author = "Pablo EA1FID"
 # contact form action
 contact_form_action = "https://formspree.io/f/xzbyjbkl" # contact form works with https://formspree.io
