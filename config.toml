@@ -135,8 +135,8 @@ expire_days = 2
 
 [[menu.main]]
 weight = 1
-url = "august23"
-name = "?"
+url = "qar"
+name = "Quantum Amateur Radio"
 
 [[menu.main]]
 weight = 2
