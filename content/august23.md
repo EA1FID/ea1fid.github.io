@@ -1,3 +1,5 @@
+<!---
+
 ---
 title: "Ham Radio is about to change..."
 layout: "about"
@@ -18,12 +20,7 @@ caption:
 <br>
 {{< image src="images/logoFinal.png" alt="Logo EA1FID" command="fill" option="q95" class="img-fluid" title="Patreon" >}}
 
-<!---
-
-title: "Ham Radio is about to change..."
-image: "images/qar.png"
-draft: false
-
+-->
 
 ---
 title: "EA1FID's page about Quantum Amateur Radio"
@@ -34,17 +31,8 @@ draft: false
 
 ### Building the foundations of Quantum Amateur Radio
 
-Texto de radioafición cuántica
-
-- Artículo 1
-
-- Artículo 2
+Work in progress.
 
 ### Towards the first qQSO
 
-Texto de radioafición cuántica
-
-- Artículo 1
-
-- Artículo 2
--->
+Work in progress.
