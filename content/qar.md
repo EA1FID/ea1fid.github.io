@@ -10,7 +10,7 @@ caption:
   title: "EA1FID's page about Quantum Amateur Radio"
 ---
 
-*This webpage intends to be a reference for operators interested in quantum amateur radio, providing both educational content as well as theoretical results and the latests news about advancements or experiments in this field.* 
+*This webpage intends to serve as a reference for operators interested in quantum amateur radio, providing both educational content as well as theoretical results and the latests news about advancements or experiments in this field.* 
 
 
 Work in progress.
